@@ -1,0 +1,112 @@
+{
+ "options": [
+  {
+   "id": "vout",
+   "label": "Output voltage",
+   "type": "number",
+   "unit": "V",
+   "default": 3.3,
+   "min": 0.8,
+   "max": 15,
+   "step": 0.1,
+   "help": "Sets R5. The inductor and compensation stay as designed for 3.3 V.",
+   "actual": "0.8 * (1 + R5 / R6)"
+  },
+  {
+   "id": "tss",
+   "label": "Soft-start time",
+   "type": "number",
+   "unit": "ms",
+   "default": 6,
+   "min": 1,
+   "max": 50,
+   "step": 1,
+   "help": "Sets C5.",
+   "actual": "C5 * 0.8 / 2u * 1000"
+  },
+  {
+   "id": "uvlo",
+   "label": "Under-voltage lockout",
+   "type": "choice",
+   "default": "divider",
+   "choices": [
+    {
+     "id": "divider",
+     "label": "R1 / R2 divider"
+    },
+    {
+     "id": "off",
+     "label": "Off (EN left open)"
+    }
+   ],
+   "help": "EN has an internal pull-up, so the converter also starts with the pin open."
+  }
+ ],
+ "rules": [
+  {
+   "when": "",
+   "ref": "R5",
+   "set": "value",
+   "to": "R6 * (vout / 0.8 - 1)",
+   "series": "E96"
+  },
+  {
+   "when": "",
+   "ref": "C5",
+   "set": "value",
+   "to": "tss * 1m * 2u / 0.8",
+   "series": "E12"
+  },
+  {
+   "when": "uvlo == 'off'",
+   "ref": "R1",
+   "set": "remove"
+  },
+  {
+   "when": "uvlo == 'off'",
+   "ref": "R2",
+   "set": "remove"
+  },
+  {
+   "when": "uvlo == 'off'",
+   "ref": "U1",
+   "pin": "3",
+   "set": "net",
+   "to": "''"
+  }
+ ],
+ "sim": {
+  "sources": [
+   {
+    "net": "VIN",
+    "kind": "dc",
+    "value": 12
+   }
+  ],
+  "standins": [
+   {
+    "ref": "U1",
+    "pin": "8",
+    "kind": "pulse",
+    "low": -0.3,
+    "high": 12,
+    "freq": 570000,
+    "duty": "(vout + 0.3) / 12.3",
+    "note": "switch node: 570 kHz, duty = VOUT / VIN"
+   }
+  ],
+  "chips": [],
+  "probes": [
+   "VOUT",
+   "VSENSE"
+  ],
+  "tstop": 0.005,
+  "loads": [
+   {
+    "net": "VOUT",
+    "value": "vout / 1",
+    "note": "1 A load"
+   }
+  ]
+ }
+}

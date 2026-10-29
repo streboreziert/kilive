@@ -1,0 +1,15 @@
+#!/bin/bash
+# KiLive: start the local server and open the app window. The server stops by itself after the window closes.
+DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+PY=""
+for c in python3 /usr/bin/python3 /usr/local/bin/python3 /opt/homebrew/bin/python3; do
+  if command -v "$c" >/dev/null 2>&1 && "$c" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 8) else 1)' 2>/dev/null; then PY="$c"; break; fi
+done
+if [ -z "$PY" ]; then
+  osascript -e 'display dialog "KiLive needs Python 3, which this Mac does not have yet.\n\nOpen Terminal, type  python3  and press Return: macOS offers to install the command line tools. Then open KiLive again." buttons {"OK"} default button 1 with title "KiLive"'
+  exit 1
+fi
+cd "$DIR" || exit 1
+mkdir -p local-data
+nohup "$PY" scripts/serve.py >> local-data/server.log 2>&1 &
+exit 0

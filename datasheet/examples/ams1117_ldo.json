@@ -1,0 +1,348 @@
+{
+ "part": {
+  "mpn": "AMS1117-3.3",
+  "manufacturer": "AMS",
+  "package": "SOT-223"
+ },
+ "design": {
+  "title": "AMS1117-3.3 regulator with LED and header",
+  "page": 1,
+  "description": "5 V to 3.3 V LDO"
+ },
+ "components": [
+  {
+   "ref": "U1",
+   "type": "ic",
+   "value": "AMS1117-3.3",
+   "mpn": "AMS1117-3.3",
+   "manufacturer": "",
+   "description": "",
+   "package": "SOT-223",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": [
+    {
+     "number": "1",
+     "name": "GND",
+     "etype": "power_in",
+     "side": ""
+    },
+    {
+     "number": "2",
+     "name": "VO",
+     "etype": "power_out",
+     "side": ""
+    },
+    {
+     "number": "3",
+     "name": "VI",
+     "etype": "power_in",
+     "side": ""
+    }
+   ]
+  },
+  {
+   "ref": "C1",
+   "type": "capacitor_polarized",
+   "value": "10uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "16V",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C2",
+   "type": "capacitor_polarized",
+   "value": "22uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "1206",
+   "rating": "10V tantalum",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C3",
+   "type": "capacitor",
+   "value": "100nF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R1",
+   "type": "resistor",
+   "value": "1k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "D1",
+   "type": "led",
+   "value": "GREEN",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "0603",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "J1",
+   "type": "connector",
+   "value": "PWR_IN",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": [
+    {
+     "number": "1",
+     "name": "",
+     "etype": "",
+     "side": ""
+    },
+    {
+     "number": "2",
+     "name": "",
+     "etype": "",
+     "side": ""
+    }
+   ]
+  },
+  {
+   "ref": "Q1",
+   "type": "mosfet_n",
+   "value": "2N7002",
+   "mpn": "2N7002",
+   "manufacturer": "",
+   "description": "",
+   "package": "SOT-23",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R2",
+   "type": "resistor",
+   "value": "10k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R3",
+   "type": "resistor",
+   "value": "100R",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  }
+ ],
+ "nets": [
+  {
+   "name": "+5V",
+   "kind": "power",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "J1",
+     "pin": "1"
+    },
+    {
+     "ref": "U1",
+     "pin": "3"
+    },
+    {
+     "ref": "C1",
+     "pin": "+"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "kind": "ground",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "J1",
+     "pin": "2"
+    },
+    {
+     "ref": "U1",
+     "pin": "1"
+    },
+    {
+     "ref": "C1",
+     "pin": "-"
+    },
+    {
+     "ref": "C2",
+     "pin": "-"
+    },
+    {
+     "ref": "C3",
+     "pin": "2"
+    },
+    {
+     "ref": "Q1",
+     "pin": "S"
+    },
+    {
+     "ref": "R2",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "+3V3",
+   "kind": "power",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "2"
+    },
+    {
+     "ref": "C2",
+     "pin": "+"
+    },
+    {
+     "ref": "C3",
+     "pin": "1"
+    },
+    {
+     "ref": "R1",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "R1",
+     "pin": "2"
+    },
+    {
+     "ref": "D1",
+     "pin": "A"
+    }
+   ]
+  },
+  {
+   "name": "LED_K",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "D1",
+     "pin": "K"
+    },
+    {
+     "ref": "Q1",
+     "pin": "D"
+    }
+   ]
+  },
+  {
+   "name": "GATE",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "Q1",
+     "pin": "G"
+    },
+    {
+     "ref": "R2",
+     "pin": "1"
+    },
+    {
+     "ref": "R3",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "CTRL",
+   "kind": "signal",
+   "port": "input",
+   "nodes": [
+    {
+     "ref": "R3",
+     "pin": "1"
+    }
+   ]
+  }
+ ],
+ "no_connects": [],
+ "notes": [],
+ "warnings": []
+}

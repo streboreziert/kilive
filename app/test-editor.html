@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schematic editor · KiLive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="js/scheditor.css">
+<script>if (/[?&]dark\b/.test(location.search)) document.documentElement.dataset.theme = 'dark'; else if (/[?&]light\b/.test(location.search)) document.documentElement.dataset.theme = 'light';</script>
+<style>
+/* copied from index.html: design tokens and the control classes the editor reuses */
+:root {
+  --bg: #f3f4f0; --panel: #ffffff; --panel-2: #eef0eb; --ink: #15191b; --ink-2: #394044; --muted: #667075; --line: #dcdfda; --line-2: #e8ebe6;
+  --accent: #0e7656; --accent-ink: #ffffff; --accent-soft: #e0f0e8; --probe: #e3a900; --probe-soft: #fff3c7;
+  --pass: #1b834b; --warn: #a8640f; --fail: #bf3727; --info: #3462ad;
+  --pass-soft: #e2f2e8; --warn-soft: #fbefd9; --fail-soft: #fbe5e1; --info-soft: #e5ecf8;
+  --stage-a: #dfe3ea; --stage-b: #9aa3b3; --pcb-bg: #0b1014; --pcb-board: #111a20;
+  --sch-bg: #e6e8e2; --sch-paper: #fbfaf5; --sch-frame: #8a3a2a; --sch-wire: #13804a; --sch-bus: #2350b8; --sch-body: #8a2a20; --sch-fill: #fff4d4;
+  --sch-pin: #8a2a20; --sch-pinname: #146a6a; --sch-ref: #146a6a; --sch-text: #222222; --sch-note: #2350b8; --sch-sheet: #7a2a8c; --sch-sheet-fill: #faf3fb; --sch-nc: #2350b8; --sch-label: #1b1b1b;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-cond: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --shadow: 0 1px 2px rgba(20, 25, 22, .06), 0 6px 18px rgba(20, 25, 22, .06);
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1113; --panel: #15191c; --panel-2: #1c2125; --ink: #e5eae6; --ink-2: #c2cac5; --muted: #8d9892; --line: #273034; --line-2: #1f262a;
+    --accent: #45c79b; --accent-ink: #04130d; --accent-soft: #123126; --probe: #f2c233; --probe-soft: #3a300f;
+    --pass: #53c784; --warn: #e3a44b; --fail: #f07462; --info: #79a2eb;
+    --pass-soft: #12301f; --warn-soft: #36270f; --fail-soft: #3a1914; --info-soft: #172640;
+    --stage-a: #3b4352; --stage-b: #1b2029; --pcb-bg: #080b0e; --pcb-board: #0f171d;
+    --sch-bg: #0e1215; --sch-paper: #171b1f; --sch-frame: #b8705f; --sch-wire: #4fc184; --sch-bus: #6d95f0; --sch-body: #e08a74; --sch-fill: #2a2618;
+    --sch-pin: #e08a74; --sch-pinname: #6fc6c0; --sch-ref: #6fc6c0; --sch-text: #d6dbd7; --sch-note: #7ea2f0; --sch-sheet: #c68ad6; --sch-sheet-fill: #1f1824; --sch-nc: #7ea2f0; --sch-label: #e6ebe7;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1113; --panel: #15191c; --panel-2: #1c2125; --ink: #e5eae6; --ink-2: #c2cac5; --muted: #8d9892; --line: #273034; --line-2: #1f262a;
+  --accent: #45c79b; --accent-ink: #04130d; --accent-soft: #123126; --probe: #f2c233; --probe-soft: #3a300f;
+  --pass: #53c784; --warn: #e3a44b; --fail: #f07462; --info: #79a2eb;
+  --pass-soft: #12301f; --warn-soft: #36270f; --fail-soft: #3a1914; --info-soft: #172640;
+  --stage-a: #3b4352; --stage-b: #1b2029; --pcb-bg: #080b0e; --pcb-board: #0f171d;
+  --sch-bg: #0e1215; --sch-paper: #171b1f; --sch-frame: #b8705f; --sch-wire: #4fc184; --sch-bus: #6d95f0; --sch-body: #e08a74; --sch-fill: #2a2618;
+  --sch-pin: #e08a74; --sch-pinname: #6fc6c0; --sch-ref: #6fc6c0; --sch-text: #d6dbd7; --sch-note: #7ea2f0; --sch-sheet: #c68ad6; --sch-sheet-fill: #1f1824; --sch-nc: #7ea2f0; --sch-label: #e6ebe7;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--ink); }
+body { font: 400 14px/1.5 var(--font-sans); -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--font-mono); }
+.muted { color: var(--muted); }
+.small { font-size: 12.5px; }
+.eyebrow { font: 500 11.5px/1.2 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.ico { display: inline-flex; flex: none; line-height: 0; }
+.ico.tiny svg { width: 12px; height: 12px; }
+.grow { flex: 1; }
+.btn { display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-weight: 500; cursor: pointer; white-space: nowrap; transition: background .15s, border-color .15s; }
+.btn:hover { background: var(--panel-2); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.primary:hover { opacity: .9; }
+.btn.ghost { background: transparent; }
+.btn.tiny { height: 28px; padding: 0 10px; font-size: 12.5px; border-radius: 8px; gap: 5px; }
+.btn.icon-only { width: 38px; padding: 0; justify-content: center; }
+.btn .count { padding-left: 8px; margin-left: 2px; border-left: 1px solid var(--line); color: var(--ink-2); }
+.btn.starred .star-ico { color: var(--probe); }
+.btn:disabled { opacity: .5; cursor: default; }
+.icon-btn { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 0; border-radius: 8px; background: transparent; color: var(--ink-2); cursor: pointer; }
+.icon-btn:hover { background: var(--panel-2); color: var(--ink); }
+.icon-btn.small { width: 26px; height: 26px; }
+.input { width: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font: inherit; padding: 8px 11px; }
+.input:focus { outline: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); border-color: var(--accent); }
+.input.small { padding: 5px 9px; font-size: 13px; }
+textarea.input { resize: vertical; line-height: 1.45; }
+.seg { display: inline-flex; padding: 3px; gap: 2px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 11px; }
+.seg button { border: 0; background: transparent; padding: 6px 13px; border-radius: 8px; cursor: pointer; color: var(--muted); font-weight: 500; display: inline-flex; gap: 6px; align-items: center; }
+.seg button.active { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 0 0 1px var(--line); }
+.seg.small button { padding: 4px 10px; font-size: 12.5px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px 2px 8px; border-radius: 999px; font: 500 12px/18px var(--font-mono); white-space: nowrap; }
+.pill .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.pill.pass { background: var(--pass-soft); color: var(--pass); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.pill.fail { background: var(--fail-soft); color: var(--fail); }
+.pill.info { background: var(--info-soft); color: var(--info); }
+.tag { display: inline-block; padding: 0 7px; border-radius: 6px; font: 500 11.5px/19px var(--font-mono); background: var(--panel-2); color: var(--ink-2); border: 1px solid var(--line); vertical-align: middle; }
+.tag.pwr { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.tag.muted { color: var(--muted); }
+.menu-pop { position: fixed; z-index: 100; min-width: 220px; max-width: min(420px, calc(100vw - 16px)); max-height: 70vh; overflow: auto; padding: 6px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 36px rgba(0,0,0,.18); }
+.menu-pop.wide { min-width: 300px; }
+.menu-item { display: flex; align-items: center; gap: 9px; width: 100%; padding: 8px 10px; border: 0; border-radius: 8px; background: transparent; color: var(--ink); text-align: left; cursor: pointer; text-decoration: none !important; }
+.menu-item:hover, .menu-item:focus-visible { background: var(--panel-2); outline: none; }
+.menu-item.active { background: var(--accent-soft); color: var(--accent); }
+.mi-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mi-hint { font: 12px var(--font-mono); color: var(--muted); white-space: nowrap; }
+.menu-head { padding: 8px 10px 4px; font: 500 11px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.menu-sep { height: 1px; margin: 5px 4px; background: var(--line); }
+.menu-checks { display: grid; padding: 2px 4px 6px; }
+.menu-check { display: flex; gap: 10px; align-items: center; padding: 6px 8px; border-radius: 8px; cursor: pointer; }
+.menu-check:hover { background: var(--panel-2); }
+.menu-check input { accent-color: var(--accent); width: 15px; height: 15px; }
+#toasts { position: fixed; z-index: 200; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); display: grid; gap: 8px; }
+.toast { padding: 10px 16px; border-radius: 10px; background: var(--ink); color: var(--bg); font-weight: 500; box-shadow: var(--shadow); transition: opacity .4s, transform .4s; max-width: min(520px, calc(100vw - 32px)); }
+.toast.warn { background: var(--warn); color: #fff; }
+.toast.out { opacity: 0; transform: translateY(8px); }
+.tab-badge { min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; font: 600 11px/18px var(--font-mono); text-align: center; }
+.tab-badge.fail { background: var(--fail); color: #fff; }
+.tab-badge.warn { background: var(--warn-soft); color: var(--warn); }
+.viewer-tip { position: absolute; z-index: 6; pointer-events: none; padding: 7px 10px; border-radius: 9px; background: rgba(14, 18, 22, .92); color: #eef2ef; font-size: 12.5px; line-height: 1.35; max-width: 260px; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.viewer-tip b { font-family: var(--font-mono); font-weight: 600; color: #ffd84d; }
+.viewer-tip span { color: #b9c3be; }
+.seg.overlay { background: color-mix(in srgb, var(--panel) 80%, transparent); backdrop-filter: blur(6px); }
+.toolbar { display: flex; align-items: center; gap: 2px; padding: 5px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+.tb { display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px; border: 0; border-radius: 8px; background: transparent; color: var(--ink-2); cursor: pointer; font-weight: 500; white-space: nowrap; }
+.tb:hover { background: var(--panel-2); color: var(--ink); }
+.tb.on { background: var(--accent-soft); color: var(--accent); }
+.tb-sep { width: 1px; height: 22px; background: var(--line); margin: 0 3px; }
+.probe-chip { display: inline-flex; align-items: center; padding: 0 5px; border-radius: 6px; font: 500 12px/20px var(--font-mono); border: 1px solid transparent; cursor: pointer; vertical-align: baseline; }
+.probe-chip.ref { background: var(--info-soft); color: var(--info); }
+.probe-chip.net { background: var(--probe-soft); color: color-mix(in srgb, var(--probe) 62%, var(--ink)); }
+.probe-chip:hover { border-color: currentColor; }
+.probe-chip.static { cursor: default; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.tag-chip { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-2); font-size: 13px; background: var(--panel); text-decoration: none !important; }
+.tag-chip:hover { border-color: var(--accent); color: var(--accent); }
+.err { color: var(--fail); font-size: 13px; }
+/* test page */
+html, body { margin: 0; height: 100%; overflow: hidden; }
+#host { width: 100vw; height: 100vh; height: 100dvh; }
+</style>
+<div id="host"></div>
+<script src="js/util.js"></script>
+<script src="js/ds2k-engine.js"></script>
+<script src="js/scheditor.js"></script>
+<script>
+  const params = new URLSearchParams(location.search);
+  window.changes = [];
+  window.ed = new Noeti.SchEditor(document.getElementById('host'), {
+    title: 'Untitled circuit',
+    readOnly: params.has('ro'),
+    onChange: doc => { window.changes.push(doc); window.lastDoc = doc; },
+  });
+  if (params.has('example')) ed.setDoc(Noeti.SchEditor.fromCircuit(DS2K_EXAMPLE));
+</script>
+</html>

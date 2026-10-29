@@ -1,0 +1,1322 @@
+[
+ {
+  "repo": "Sleepdealr/RP2040-designguide",
+  "title": "RP2040 Design Guide Board",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "Tested RP2040 board that accompanies a written hardware design guide for the RP2040.",
+  "license": "MIT"
+ },
+ {
+  "repo": "OLIMEX/ESP32-POE",
+  "title": "Olimex ESP32-PoE",
+  "category": "mcu",
+  "mcu": "ESP32 (WROOM-32E / WROVER-E)",
+  "desc": "ESP32 IoT board with Wi-Fi, BLE and 100 Mbit Ethernet with Power-over-Ethernet.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-EVB",
+  "title": "Olimex ESP32-EVB",
+  "category": "mcu",
+  "mcu": "ESP32 (WROOM-32E)",
+  "desc": "ESP32 board with Ethernet, two relays, microSD, CAN, infrared and a Li-Po charger.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-POE-ISO",
+  "title": "Olimex ESP32-PoE-ISO",
+  "category": "mcu",
+  "mcu": "ESP32 (WROOM-32E / WROVER-E)",
+  "desc": "ESP32 Ethernet board with Power-over-Ethernet and 3000 VDC galvanic isolation from the Ethernet side.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "OLIMEX/ESP32-POE2",
+  "title": "Olimex ESP32-PoE2",
+  "category": "mcu",
+  "mcu": "ESP32 (WROVER-E)",
+  "desc": "ESP32 IoT board with Wi-Fi, Bluetooth and 100 Mbit Ethernet with up to 25 W Power-over-Ethernet.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-C3-DevKit-Lipo",
+  "title": "Olimex ESP32-C3-DevKit-Lipo",
+  "category": "mcu",
+  "mcu": "ESP32-C3",
+  "desc": "RISC-V ESP32-C3 development board with USB, JTAG, Wi-Fi, BLE 5 and a Li-Po charger.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-C6-DevKit-Lipo",
+  "title": "Olimex ESP32-C6-DevKit-Lipo",
+  "category": "mcu",
+  "mcu": "ESP32-C6",
+  "desc": "Breadboard-friendly ESP32-C6 board (Wi-Fi 6, BLE 5, Zigbee/Thread) with Li-Po charger and UEXT connector.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-H2-DevKit-LiPo",
+  "title": "Olimex ESP32-H2-DevKit-LiPo",
+  "category": "mcu",
+  "mcu": "ESP32-H2",
+  "desc": "ESP32-H2 development board for BLE 5, Thread and Zigbee with USB-C and a Li-Po charger.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-P4-DevKit",
+  "title": "Olimex ESP32-P4-DevKit",
+  "category": "mcu",
+  "mcu": "ESP32-P4",
+  "desc": "Development board for Espressif's dual-core RISC-V ESP32-P4.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/ESP32-P4-PC",
+  "title": "Olimex ESP32-P4-PC",
+  "category": "mcu",
+  "mcu": "ESP32-P4",
+  "desc": "All-in-one ESP32-P4 computer with four USB hosts, audio, HDMI, MIPI CSI/DSI, Ethernet with PoE and Li-Po support.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/RP2350pc",
+  "title": "Olimex RP2350pc",
+  "category": "mcu",
+  "mcu": "RP2350B",
+  "desc": "All-in-one RP2350 computer with 16 MB flash, 8 MB PSRAM, four USB hosts, DVI/HDMI output and stereo audio.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/RVPC",
+  "title": "Olimex RVPC",
+  "category": "mcu",
+  "mcu": "CH32V003",
+  "desc": "Very low-cost RISC-V educational computer with VGA output, keyboard input and a Woz-style monitor.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "OLIMEX/Neo6502pc",
+  "title": "Olimex Neo6502pc",
+  "category": "mcu",
+  "mcu": "W65C02 + RP2040",
+  "desc": "Retro computer pairing a real 6502 CPU with an RP2040, with HDMI output and USB keyboard, mouse, gamepad and flash-drive support.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "Wren6991/PicoDVI",
+  "title": "PicoDVI Mini Board",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "Small RP2040 board with a DVI connector from the PicoDVI project, which generates DVI video in software on the RP2040.",
+  "license": "BSD-3-Clause"
+ },
+ {
+  "repo": "joeycastillo/Sensor-Watch",
+  "title": "Sensor Watch",
+  "category": "mcu",
+  "mcu": "ATSAML22J18A",
+  "desc": "Replacement main board for the Casio F-91W wristwatch built around a Microchip SAM L22 with segment-LCD controller.",
+  "license": "CC-BY-SA-4.0"
+ },
+ {
+  "repo": "joeycastillo/The-Open-Book",
+  "title": "The Open Book",
+  "category": "mcu",
+  "mcu": "ESP32-S3",
+  "desc": "Open-source e-book reader with an e-paper display.",
+  "license": "CC-BY-SA-4.0"
+ },
+ {
+  "repo": "CIRCUITSTATE/Mitayi-Pico-D1",
+  "title": "Mitayi Pico D1",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "RP2040 development board modelled on the Raspberry Pi Pico with several improvements (not pin-compatible with the Pico).",
+  "license": "MIT"
+ },
+ {
+  "repo": "OpenJBOD/rp2040",
+  "title": "OpenJBOD RP2040 Baseboard",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "RP2040 baseboard for the OpenJBOD project, designed in KiCad 8 and running MicroPython.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "0xCB-dev/0xCB-Helios",
+  "title": "0xCB Helios",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "RP2040-based drop-in replacement for Pro Micro keyboard controllers.",
+  "license": ""
+ },
+ {
+  "repo": "piit79/Frood",
+  "title": "Frood",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "Thin RP2040 Pro Micro drop-in replacement with extra GPIOs, largely compatible with Elite-C/nice!nano.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "joshajohnson/sea-picro",
+  "title": "Sea-Picro",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "RP2040 board in the Pro Micro form factor, a drop-in upgrade for ATmega32U4-based keyboard controllers.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "zhiayang/mikoto",
+  "title": "Mikoto",
+  "category": "mcu",
+  "mcu": "nRF52840",
+  "desc": "nRF52840 board in a Pro Micro footprint with software-controlled Li-ion charging and USB ESD protection.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "joric/nrfmicro",
+  "title": "nRFMicro",
+  "category": "mcu",
+  "mcu": "nRF52840 (E73 module)",
+  "desc": "nRF52840-based Pro Micro-compatible controller for wireless keyboards.",
+  "license": "Unlicense"
+ },
+ {
+  "repo": "Hanqaqa/Easyduino",
+  "title": "Easyduino",
+  "category": "mcu",
+  "mcu": "ATmega328P / ESP32 / ESP32-S3 / RP2040 / STM32F103",
+  "desc": "KiCad re-creations of popular dev boards (Arduino Uno and Nano, ESP32, ESP32-S3, Pico, Bluepill) with USB-C, all produced and tested.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "esp-rs/esp-rust-board",
+  "title": "Rust ESP Board",
+  "category": "mcu",
+  "mcu": "ESP32-C3",
+  "desc": "ESP32-C3 development board (sold as ESP32-C3-DevKit-RUST-1) used for Rust embedded training.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "hackclub/sprig",
+  "title": "Hack Club Sprig",
+  "category": "mcu",
+  "mcu": "RP2040 (Raspberry Pi Pico)",
+  "desc": "Hack Club's handheld game console built around a Raspberry Pi Pico with a color TFT screen.",
+  "license": "MIT"
+ },
+ {
+  "repo": "and3rson/lilka",
+  "title": "Lilka",
+  "category": "mcu",
+  "mcu": "ESP32-S3",
+  "desc": "DIY handheld game console designed to be assembled from inexpensive off-the-shelf modules.",
+  "license": "GPL-2.0"
+ },
+ {
+  "repo": "codetiger/GameTiger-Console",
+  "title": "GameTiger Console",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "Retro-style handheld game console on a custom RP2040 PCB.",
+  "license": "MIT"
+ },
+ {
+  "repo": "next-hack/TheGamepadDesignFiles",
+  "title": "The Gamepad",
+  "category": "mcu",
+  "mcu": "MGM240 (Arduino Nano Matter)",
+  "desc": "Open-source handheld gaming console built around the Arduino Nano Matter board.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "shilga/rp2040-gameboy-cartridge",
+  "title": "Croco Cartridge",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "RP2040-based Game Boy cartridge that can hold multiple ROMs.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "siliconwitchery/s1-popout-board",
+  "title": "S1 Popout Board",
+  "category": "mcu",
+  "mcu": "nRF52811 + iCE40 (S1 module)",
+  "desc": "Breakout board for Silicon Witchery's S1 module (nRF52811 Bluetooth plus iCE40 FPGA) with USB-C charging and Qwiic port.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "ndoo/ikoka-nano-meshtastic-device",
+  "title": "Ikoka Nano",
+  "category": "mcu",
+  "mcu": "nRF52840 (Seeed XIAO)",
+  "desc": "Compact Meshtastic LoRa node using a Seeed XIAO nRF52840 and an EBYTE E22 LoRa module.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "haydenkz/rak4630-solar-pcb",
+  "title": "RAK4630 Solar Node",
+  "category": "mcu",
+  "mcu": "nRF52840 (RAK4630)",
+  "desc": "Solar-powered MeshCore LoRa node built around the RAK4630 module with an 18650 holder and low-voltage cutoff.",
+  "license": ""
+ },
+ {
+  "repo": "Michael-Manning/E-Paper-Climate-Logger",
+  "title": "Weathergotchi",
+  "category": "mcu",
+  "mcu": "ESP32-S3",
+  "desc": "Battery-powered temperature and humidity logger with an always-on 1.54-inch e-paper display.",
+  "license": "MIT"
+ },
+ {
+  "repo": "21km43/CH32V203-DevBoard",
+  "title": "CH32V203 Dev Board",
+  "category": "mcu",
+  "mcu": "CH32V203C8T6",
+  "desc": "CH32V203 RISC-V development board with separate USB device and USB host Type-C ports.",
+  "license": "MIT"
+ },
+ {
+  "repo": "AlexanderMandera/CH32V003-USB-DevBoard",
+  "title": "CH32V003 USB Dev Board",
+  "category": "mcu",
+  "mcu": "CH32V003F4U6",
+  "desc": "Small CH32V003 RISC-V dev board with USB-C (bit-banged USB), user button and LED.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "solderparty/rp2040_stamp_hw",
+  "title": "RP2040 Stamp",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "Castellated RP2040 module with LiPo charging and power switching, meant to be soldered onto carrier boards.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "solderparty/rp2350_stamp_hw",
+  "title": "RP2350 Stamp",
+  "category": "mcu",
+  "mcu": "RP2350A",
+  "desc": "RP2350A version of Solder Party's castellated Stamp module, pad-compatible with the RP2040 Stamp.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "solderparty/rp2350_stamp_xl_hw",
+  "title": "RP2350 Stamp XL",
+  "category": "mcu",
+  "mcu": "RP2350B",
+  "desc": "Larger castellated Stamp module for the RP2350B, partially pad-compatible with the smaller Stamps.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "solderparty/rp2xxx_stamp_carrier_xl_hw",
+  "title": "RP2xxx Stamp Carrier XL",
+  "category": "mcu",
+  "mcu": "none (hosts an RP2xxx Stamp)",
+  "desc": "Arduino Mega/Due-format carrier board for Solder Party's RP2040/RP2350 Stamp modules.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "Breadstick-Innovations/22008-RP2040-Dev-Board",
+  "title": "Breadstick RP2040 Dev Board",
+  "category": "mcu",
+  "mcu": "RP2040",
+  "desc": "RP2040 development board designed around JLCPCB basic parts for low-cost assembly.",
+  "license": "MIT"
+ },
+ {
+  "repo": "Jana-Marie/OtterPill",
+  "title": "OtterPill",
+  "category": "mcu",
+  "mcu": "STM32F072",
+  "desc": "Low-cost STM32F072 dev board with USB, DFU bootloader, a USB-PD PHY and an Arduino Nano-like pinout.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "wntrblm/Hubble",
+  "title": "Winterbloom Hubble",
+  "category": "mcu",
+  "mcu": "ATSAMD51",
+  "desc": "Winterbloom's reusable SAMD51 development board for building factory test jigs.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "scottbez1/smartknob",
+  "title": "SmartKnob View",
+  "category": "mcu",
+  "mcu": "ESP32 (LilyGO T-Micro32 Plus)",
+  "desc": "Haptic input knob pairing a brushless gimbal motor with a magnetic encoder for software-defined detents, with a round display.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "bitaxeorg/bitaxeGamma",
+  "title": "Bitaxe Gamma",
+  "category": "mcu",
+  "mcu": "ESP32-S3 + BM1370",
+  "desc": "Open-source Bitcoin ASIC miner with an ESP32-S3 controller and a BM1370 ASIC.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "bitaxeorg/bitaxeSupra",
+  "title": "Bitaxe Supra",
+  "category": "mcu",
+  "mcu": "ESP32-S3 + BM1368",
+  "desc": "Open-source Bitcoin ASIC miner with an ESP32-S3 controller and a BM1368 ASIC.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "bitaxeorg/bitaxeMax",
+  "title": "Bitaxe Max",
+  "category": "mcu",
+  "mcu": "ESP32-S3 + BM1397",
+  "desc": "The original open-source Bitcoin ASIC miner design, with an ESP32-S3 and a BM1397 ASIC.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "bitaxeorg/turbo-touch",
+  "title": "Bitaxe Turbo Touch",
+  "category": "mcu",
+  "mcu": "ESP32-S3",
+  "desc": "ESP32-S3 board driving a 4.3-inch capacitive touch LCD, an accessory for Bitaxe miners.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "shufps/qaxe",
+  "title": "NerdQAxe",
+  "category": "mcu",
+  "mcu": "ESP32-S3 (T-Display-S3) + 4x BM1370",
+  "desc": "Small-scale Bitcoin miners with four Bitmain ASICs, including the NerdQAxe+ and NerdQAxe++.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "foostan/crkbd",
+  "title": "Corne Keyboard",
+  "category": "keyboard",
+  "mcu": "Pro Micro-compatible controller",
+  "desc": "3x6 column-staggered split keyboard with three thumb keys, in MX and Choc versions.",
+  "license": "CC-BY-4.0"
+ },
+ {
+  "repo": "josefadamcik/SofleKeyboard",
+  "title": "Sofle Keyboard",
+  "category": "keyboard",
+  "mcu": "Pro Micro / Raspberry Pi Pico",
+  "desc": "6x4+5 column-staggered split keyboard with encoder support, including a Pico-based variant.",
+  "license": "MIT"
+ },
+ {
+  "repo": "Bastardkb/Dilemma",
+  "title": "Dilemma",
+  "category": "keyboard",
+  "mcu": "RP2040",
+  "desc": "Low-profile split keyboard with an on-board RP2040, encoders and optional Cirque trackpad.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "GEIGEIGEIST/TOTEM",
+  "title": "TOTEM",
+  "category": "keyboard",
+  "mcu": "Seeed XIAO nRF52840 / RP2040",
+  "desc": "38-key column-staggered Choc split keyboard for Seeed XIAO controllers.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "GEIGEIGEIST/KLOR",
+  "title": "KLOR",
+  "category": "keyboard",
+  "mcu": "external controller",
+  "desc": "36-42 key column-staggered split keyboard with per-key RGB, encoders, OLEDs and optional trackball.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "davidphilipbarr/Sweep",
+  "title": "Ferris Sweep",
+  "category": "keyboard",
+  "mcu": "Pro Micro-compatible controller",
+  "desc": "34-key split keyboard derived from the Ferris that uses a Pro Micro-style daughter board.",
+  "license": "SHL-2.1"
+ },
+ {
+  "repo": "diepala/cantor",
+  "title": "Cantor",
+  "category": "keyboard",
+  "mcu": "STM32F4 (WeAct Black Pill)",
+  "desc": "Diodeless 42-key split keyboard designed for simple, cheap assembly.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "beekeeb/piantor",
+  "title": "Piantor",
+  "category": "keyboard",
+  "mcu": "RP2040 (Raspberry Pi Pico)",
+  "desc": "Diodeless low-profile Choc split keyboard powered by a Raspberry Pi Pico, based on the Cantor.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "tompi/cheapino",
+  "title": "Cheapino",
+  "category": "keyboard",
+  "mcu": "RP2040 (RP2040-Zero)",
+  "desc": "Very low-cost reversible split keyboard using a Japanese duplex matrix and a single MCU.",
+  "license": "CC-BY-4.0"
+ },
+ {
+  "repo": "mmccoyd/hillside",
+  "title": "Hillside",
+  "category": "keyboard",
+  "mcu": "Pro Micro-compatible controller",
+  "desc": "Family of 40% split ergonomic column-staggered keyboards.",
+  "license": "MIT"
+ },
+ {
+  "repo": "kata0510/Lily58",
+  "title": "Lily58",
+  "category": "keyboard",
+  "mcu": "RP2040 (Pro V2) / Pro Micro",
+  "desc": "6x4+4 column-staggered split keyboard; the Pro V2 has an on-board RP2040.",
+  "license": "MIT"
+ },
+ {
+  "repo": "gtips/reviung",
+  "title": "REVIUNG",
+  "category": "keyboard",
+  "mcu": "Pro Micro-compatible controller",
+  "desc": "Family of compact column-staggered unibody keyboards (REVIUNG34/39/41/46).",
+  "license": "MIT"
+ },
+ {
+  "repo": "joric/jorne",
+  "title": "Jorne",
+  "category": "keyboard",
+  "mcu": "Pro Micro-compatible controller",
+  "desc": "Split keyboard with a Jian-style layout, in classic and hotswap versions.",
+  "license": ""
+ },
+ {
+  "repo": "tzarc/djinn",
+  "title": "Ghoul & Kobold",
+  "category": "keyboard",
+  "mcu": "SparkFun MicroMod (Ghoul) / STM32G431 (Kobold)",
+  "desc": "tzarc's keyboard designs: the Ghoul Planck-like QMK dev board and the Kobold 4x4 macropad.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "system76/launch",
+  "title": "System76 Launch",
+  "category": "keyboard",
+  "mcu": "AT90USB646",
+  "desc": "System76's open-hardware configurable mechanical keyboard with a built-in USB hub.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "0xCB-dev/0xCB-1337",
+  "title": "0xCB 1337",
+  "category": "keyboard",
+  "mcu": "ATmega32U4 / RP2040",
+  "desc": "Mechanical macropad with OLED running QMK.",
+  "license": ""
+ },
+ {
+  "repo": "cormoran/dya-dash-keyboard",
+  "title": "DYA Dash",
+  "category": "keyboard",
+  "mcu": "nRF52840 (Seeed XIAO)",
+  "desc": "Portable wireless split keyboard with ZMK, touch-sensor buttons and a trackball sensor, powered by AAA cells.",
+  "license": "CC-BY-4.0"
+ },
+ {
+  "repo": "badgeteam/mch2022-badge-hardware",
+  "title": "MCH2022 Badge",
+  "category": "badge",
+  "mcu": "ESP32 + RP2040 + iCE40UP5K",
+  "desc": "Event badge for the MCH2022 hacker camp with an ESP32, an RP2040 and an iCE40 FPGA.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "emfcamp/badge-2024-hardware",
+  "title": "EMF Tildagon Badge",
+  "category": "badge",
+  "mcu": "ESP32-S3",
+  "desc": "Electromagnetic Field Tildagon hexagonal badge and its hexpansion add-on boards.",
+  "license": ""
+ },
+ {
+  "repo": "ranzbak/why2025-hardware",
+  "title": "WHY2025 Badge",
+  "category": "badge",
+  "mcu": "ESP32-P4 + ESP32-C6",
+  "desc": "Hardware for the WHY2025 hacker camp badge, plus front-panel variants.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "thestumbler/vectorscope-kicad",
+  "title": "Supercon 2023 Vectorscope",
+  "category": "badge",
+  "mcu": "RP2040",
+  "desc": "KiCad redraw of the Hackaday Supercon 2023 Vectorscope badge.",
+  "license": ""
+ },
+ {
+  "repo": "thestumbler/supercon24-badge-kicad-redrawn",
+  "title": "Supercon 2024 Badge",
+  "category": "badge",
+  "mcu": "RP2040 (Raspberry Pi Pico W)",
+  "desc": "KiCad redraw of the Hackaday Supercon 2024 badge, a hub for SAO add-ons.",
+  "license": ""
+ },
+ {
+  "repo": "psychogenic/blinkencap",
+  "title": "Blinkencap SAO",
+  "category": "badge",
+  "mcu": "Tiny Tapeout ASIC",
+  "desc": "Hackaday Supercon SAO add-on that blinks LEDs using a Tiny Tapeout ASIC.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "Somerset-Recon/bsides-badge-2024",
+  "title": "BSides 2024 Badge",
+  "category": "badge",
+  "mcu": "ESP32-C3",
+  "desc": "Conference badge for BSides 2024 with KiCad files and CTF firmware.",
+  "license": ""
+ },
+ {
+  "repo": "RetiaLLC/DefconBadge2026",
+  "title": "Retia DEF CON Badge",
+  "category": "badge",
+  "mcu": "ESP32-S3",
+  "desc": "ESP32-S3 DEF CON badge with LoRa radio and LCD that runs mesh messengers, games and emulators.",
+  "license": ""
+ },
+ {
+  "repo": "bornhack/badge2025",
+  "title": "BornHack 2025 Badge",
+  "category": "badge",
+  "mcu": "ESP32-C3",
+  "desc": "Circular BornHack 2025 badge with ESP32-C3 and a LoRa module, able to run Meshtastic.",
+  "license": "CC-BY-SA-4.0"
+ },
+ {
+  "repo": "bornhack/badge2024",
+  "title": "BornHack 2024 Badge",
+  "category": "badge",
+  "mcu": "ESP32-C3",
+  "desc": "BornHack 2024 persistence-of-vision badge.",
+  "license": "CC-BY-SA-4.0"
+ },
+ {
+  "repo": "bornhack/badge2023",
+  "title": "BornHack 2023 NFC Badges",
+  "category": "badge",
+  "mcu": "RP2040",
+  "desc": "BornHack 2023 NFC badges: an RP2040 NFC reader/card-emulation badge, a tag badge and an I/O expander.",
+  "license": "CC-BY-SA-4.0"
+ },
+ {
+  "repo": "ElectronicCats/AjoloteBoard",
+  "title": "Ajolote Badge",
+  "category": "badge",
+  "mcu": "none",
+  "desc": "Axolotl-shaped learn-to-solder badge kit with two color-changing LEDs.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "tinyvision-ai-inc/pico-ice",
+  "title": "pico-ice",
+  "category": "fpga",
+  "mcu": "RP2040 + iCE40UP5K",
+  "desc": "Small board combining an RP2040 with a Lattice iCE40UP5K FPGA, with all pins on PMOD-style headers.",
+  "license": "MIT"
+ },
+ {
+  "repo": "tinyvision-ai-inc/pico2-ice",
+  "title": "pico2-ice",
+  "category": "fpga",
+  "mcu": "RP2350 + iCE40UP5K",
+  "desc": "Small board combining an RP2350 with a Lattice iCE40UP5K FPGA and PSRAM, with pins on Pmod headers.",
+  "license": "MIT"
+ },
+ {
+  "repo": "tinyvision-ai-inc/UPduino-v3.0",
+  "title": "UPduino v3.1",
+  "category": "fpga",
+  "mcu": "iCE40UP5K",
+  "desc": "Small low-cost iCE40UP5K FPGA board with on-board FT232H programmer and all FPGA pins on headers.",
+  "license": "MIT"
+ },
+ {
+  "repo": "cheyao/icepi-zero",
+  "title": "Icepi Zero",
+  "category": "fpga",
+  "mcu": "ECP5 (LFE5U-25F)",
+  "desc": "Lattice ECP5 FPGA development board in the Raspberry Pi Zero form factor.",
+  "license": "SHL-2.1"
+ },
+ {
+  "repo": "ICE-V-Wireless/ICE-V-Wireless",
+  "title": "ICE-V Wireless",
+  "category": "fpga",
+  "mcu": "ESP32-C3 + iCE40UP5K",
+  "desc": "Board combining an ESP32-C3 module with an iCE40UP5K FPGA for Wi-Fi/BLE control of the FPGA.",
+  "license": "MIT"
+ },
+ {
+  "repo": "gregdavill/ButterStick",
+  "title": "ButterStick",
+  "category": "fpga",
+  "mcu": "ECP5-5G (LFE5UM5G)",
+  "desc": "Compact ECP5 development board with DDR3, high-speed USB, gigabit Ethernet and SERDES breakouts.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "machdyne/riegel",
+  "title": "Machdyne Riegel",
+  "category": "fpga",
+  "mcu": "iCE40HX4K",
+  "desc": "Small FPGA computer from Machdyne (Lone Dynamics).",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/eis",
+  "title": "Machdyne Eis",
+  "category": "fpga",
+  "mcu": "iCE40HX4K + RP2040",
+  "desc": "Small FPGA computer from Machdyne with a 3D-printable case.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/keks",
+  "title": "Machdyne Keks",
+  "category": "fpga",
+  "mcu": "iCE40HX8K + RP2040",
+  "desc": "FPGA-based 32-bit game console and computer for teaching about computers and FPGAs.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/bonbon",
+  "title": "Machdyne Bonbon",
+  "category": "fpga",
+  "mcu": "iCE40UP5K + RP2040",
+  "desc": "Compact FPGA computer from Machdyne.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/lakritz",
+  "title": "Machdyne Lakritz",
+  "category": "fpga",
+  "mcu": "ECP5",
+  "desc": "ECP5 FPGA computer with JTAG and a USB-C DFU bootloader.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/schoko",
+  "title": "Machdyne Schoko",
+  "category": "fpga",
+  "mcu": "ECP5",
+  "desc": "ECP5 FPGA computer with JTAG and a USB-C DFU bootloader.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/konfekt",
+  "title": "Machdyne Konfekt",
+  "category": "fpga",
+  "mcu": "ECP5",
+  "desc": "ECP5 FPGA computer with JTAG and a USB-C DFU bootloader.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/minze",
+  "title": "Machdyne Minze",
+  "category": "fpga",
+  "mcu": "ECP5",
+  "desc": "ECP5 FPGA computer with SDRAM, microSD and PMOD, programmable over USB-C DFU.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/kirsch",
+  "title": "Machdyne Kirsch",
+  "category": "fpga",
+  "mcu": "Artix-7 (XC7A35T)",
+  "desc": "Xilinx Artix-7 FPGA computer from Machdyne, programmable over JTAG.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/sechzig",
+  "title": "Machdyne Sechzig Modules",
+  "category": "fpga",
+  "mcu": "ECP5 / Artix-7 (XC7A35T)",
+  "desc": "Compute modules with a 60-pin card-edge connector, in ECP5 and Artix-7 variants.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "machdyne/mozart",
+  "title": "Machdyne Mozart",
+  "category": "fpga",
+  "mcu": "RP2040",
+  "desc": "Motherboard that turns a Sechzig FPGA compute module into a computer, with an RP2040 providing JTAG and USB CDC.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "antmicro/kria-k26-devboard",
+  "title": "Antmicro Kria K26 Devboard",
+  "category": "fpga",
+  "mcu": "AMD Kria K26 SoM (Zynq UltraScale+)",
+  "desc": "Open-hardware development board for the AMD-Xilinx Kria K26 system-on-module, designed in KiCad 7.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "antmicro/sodimm-ddr5-tester",
+  "title": "Antmicro SO-DIMM DDR5 Tester",
+  "category": "fpga",
+  "mcu": "Kintex-7 (XC7K160T)",
+  "desc": "Kintex-7 FPGA platform for interfacing with SO-DIMM DDR5 memory, used with the Rowhammer Tester suite.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "GlasgowEmbedded/glasgow",
+  "title": "Glasgow Interface Explorer",
+  "category": "instrument",
+  "mcu": "iCE40HX8K (rev C) / ECP5 (rev D) + CY7C68013A (FX2)",
+  "desc": "FPGA-based multi-tool for exploring and debugging digital interfaces over USB (revisions C3, D0 and D1).",
+  "license": "0BSD"
+ },
+ {
+  "repo": "DangerousPrototypes/BusPirate5-hardware",
+  "title": "Bus Pirate 5",
+  "category": "instrument",
+  "mcu": "RP2040 / RP2350",
+  "desc": "Universal serial interface tool for talking to chips over I2C, SPI, UART, 1-Wire and more, plus its adapter boards.",
+  "license": "MIT"
+ },
+ {
+  "repo": "greatscottgadgets/hackrf",
+  "title": "HackRF One",
+  "category": "instrument",
+  "mcu": "LPC4320",
+  "desc": "Low-cost open-source software-defined radio platform.",
+  "license": "GPL-2.0"
+ },
+ {
+  "repo": "gusmanb/logicanalyzer",
+  "title": "Pico Logic Analyzer",
+  "category": "instrument",
+  "mcu": "RP2040 (Raspberry Pi Pico)",
+  "desc": "Logic analyzer built around the Raspberry Pi Pico, with level-shifter and enclosure boards.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "jankae/LibreVNA",
+  "title": "LibreVNA",
+  "category": "instrument",
+  "mcu": "STM32G431 + Spartan-6 (XC6SLX9)",
+  "desc": "USB vector network analyzer covering 100 kHz to 6 GHz.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "fossasia/pslab-hardware",
+  "title": "PSLab",
+  "category": "instrument",
+  "mcu": "PIC24EP256GP204",
+  "desc": "Pocket Science Lab: oscilloscope, waveform generator, frequency counter, programmable sources and data logger.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "EEVengers/ThunderScope",
+  "title": "ThunderScope",
+  "category": "instrument",
+  "mcu": "Artix-7 (XC7A50T)",
+  "desc": "Four-channel 1 GS/s oscilloscope that streams data to a PC over Thunderbolt/USB4.",
+  "license": "MIT"
+ },
+ {
+  "repo": "hydrabus/hydrabus",
+  "title": "HydraBus",
+  "category": "instrument",
+  "mcu": "STM32F405",
+  "desc": "Open-source multi-tool board for hardware hacking and debugging.",
+  "license": ""
+ },
+ {
+  "repo": "Architeuthis-Flux/Jumperless",
+  "title": "Jumperless",
+  "category": "instrument",
+  "mcu": "RP2040",
+  "desc": "Breadboard that makes real connections between any points using analog crosspoint switches.",
+  "license": ""
+ },
+ {
+  "repo": "Architeuthis-Flux/JumperlessV5",
+  "title": "Jumperless V5",
+  "category": "instrument",
+  "mcu": "RP2350B",
+  "desc": "Next-generation Jumperless breadboard with an RP2350B, probe and crosspoint-switch routing.",
+  "license": ""
+ },
+ {
+  "repo": "machdyne/werkzeug",
+  "title": "Machdyne Werkzeug",
+  "category": "instrument",
+  "mcu": "RP2040",
+  "desc": "RP2040 USB multi-tool: programmer, USB-UART/SPI/I2C bridge, USB host bridge and logic analyzer.",
+  "license": ""
+ },
+ {
+  "repo": "ElectronicCats/CatSniffer",
+  "title": "CatSniffer",
+  "category": "instrument",
+  "mcu": "RP2040 + CC1352P",
+  "desc": "Multi-protocol, multi-band USB stick for sniffing and attacking IoT radios (TI CC1352 plus Semtech SX1262).",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "ElectronicCats/BomberCat",
+  "title": "BomberCat",
+  "category": "instrument",
+  "mcu": "RP2040 + ESP32",
+  "desc": "Security tool for auditing NFC and magnetic-stripe card systems, with an ESP32 Wi-Fi co-processor.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "ElectronicCats/faultycat",
+  "title": "FaultyCat",
+  "category": "instrument",
+  "mcu": "RP2040",
+  "desc": "Low-cost electromagnetic fault injection (EMFI) tool for hobbyist research.",
+  "license": "BSD-3-Clause"
+ },
+ {
+  "repo": "ElectronicCats/Minino",
+  "title": "Minino",
+  "category": "instrument",
+  "mcu": "ESP32-C6",
+  "desc": "Pocket multi-protocol board for IoT security research with GPS, microSD and OLED.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "stacksmashing/pico-tpmsniffer",
+  "title": "Pico TPM Sniffer",
+  "category": "instrument",
+  "mcu": "RP2040 (Raspberry Pi Pico)",
+  "desc": "Raspberry Pi Pico board for sniffing LPC TPM traffic via the debug-card connector on some Lenovo laptops.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "upsidedownlabs/BioAmp-EXG-Pill",
+  "title": "BioAmp EXG Pill",
+  "category": "instrument",
+  "mcu": "none",
+  "desc": "Tiny analog front end for recording ECG, EMG, EOG and EEG signals with any microcontroller ADC.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "antmicro/programmable-led-panel",
+  "title": "Antmicro Programmable LED Panel",
+  "category": "instrument",
+  "mcu": "RP2040 + iCE40UP5K",
+  "desc": "10x14 LED matrix driven by an RP2040 or iCE40 FPGA, used for measuring latency in vision systems.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "greatscottgadgets/cynthion-hardware",
+  "title": "Cynthion",
+  "category": "usb",
+  "mcu": "ECP5 + ATSAMD11",
+  "desc": "USB test instrument for building, testing and monitoring USB devices; platform for the LUNA gateware library.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "usbarmory/usbarmory",
+  "title": "USB armory Mk II LAN",
+  "category": "usb",
+  "mcu": "NXP i.MX6UL",
+  "desc": "Compact open-hardware secure computer from the USB armory family (Mk II LAN board).",
+  "license": ""
+ },
+ {
+  "repo": "hrvach/deskhop",
+  "title": "DeskHop",
+  "category": "usb",
+  "mcu": "RP2040 x2 (Raspberry Pi Pico)",
+  "desc": "Fast desktop switcher that shares one USB keyboard and mouse between two computers.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "jfedor2/hid-remapper",
+  "title": "HID Remapper",
+  "category": "usb",
+  "mcu": "RP2040",
+  "desc": "Configurable USB dongle that remaps inputs from mice, keyboards and other HID devices in hardware.",
+  "license": ""
+ },
+ {
+  "repo": "ElectronicCats/CatWAN_USB_Stick",
+  "title": "CatWAN USB Stick",
+  "category": "usb",
+  "mcu": "RP2040",
+  "desc": "USB stick with a LoRa radio for sniffing and debugging LoRa/LoRaWAN traffic.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "machdyne/blaustahl",
+  "title": "Machdyne Blaustahl",
+  "category": "usb",
+  "mcu": "RP2040",
+  "desc": "USB dongle with FRAM-backed text storage and a built-in editor, file browser and Scheme environment.",
+  "license": ""
+ },
+ {
+  "repo": "FrameworkComputer/InputModules",
+  "title": "Framework 16 Input Modules",
+  "category": "usb",
+  "mcu": "RP2040",
+  "desc": "Hot-swappable USB input modules for the Framework Laptop 16, including the LED matrix and MCU module.",
+  "license": "CC-BY-4.0"
+ },
+ {
+  "repo": "NickGuyver/OSUMGP-RP2040",
+  "title": "OSUMGP RP2040",
+  "category": "usb",
+  "mcu": "RP2040",
+  "desc": "Reference game-pad design for the GP2040-CE firmware.",
+  "license": "CC-BY-4.0"
+ },
+ {
+  "repo": "LibreSolar/bms-c1",
+  "title": "Libre Solar BMS C1",
+  "category": "power",
+  "mcu": "ESP32-C3",
+  "desc": "Compact battery management system for multi-cell lithium packs (formerly named BMS 16S100 SC).",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "stuartpittaway/diyBMSv4",
+  "title": "diyBMS v4",
+  "category": "power",
+  "mcu": "ESP32 (controller) + STM32F030 (cell modules)",
+  "desc": "Do-it-yourself battery management system for lithium-ion packs, with controller and per-cell module boards.",
+  "license": "CC-BY-NC-SA-2.0-UK"
+ },
+ {
+  "repo": "theohg/PD240W",
+  "title": "PD240W",
+  "category": "power",
+  "mcu": "RP2040 (Raspberry Pi Pico)",
+  "desc": "Adjustable USB-C Power Delivery supply for motor drives, up to 240 W at 48 V.",
+  "license": "MIT"
+ },
+ {
+  "repo": "centydev/PicoPD",
+  "title": "PicoPD",
+  "category": "power",
+  "mcu": "RP2040",
+  "desc": "Pico-footprint USB Power Delivery dev board that negotiates PD/PPS voltages up to 20 V at 5 A.",
+  "license": "MIT"
+ },
+ {
+  "repo": "eez-open/modular-psu",
+  "title": "EEZ BB3 Modules",
+  "category": "power",
+  "mcu": "none",
+  "desc": "KiCad design files for EEZ Bench Box 3 modular test-and-measurement boards, including its auxiliary power supply.",
+  "license": "TAPR-OHL-1.0"
+ },
+ {
+  "repo": "mjbots/power_dist",
+  "title": "mjbots power_dist / mjpower-ss",
+  "category": "power",
+  "mcu": "none",
+  "desc": "Robot power distribution boards with pre-charge, over-current limiting and connector fan-out.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "wntrblm/Castor_and_Pollux",
+  "title": "Winterbloom Castor & Pollux",
+  "category": "audio",
+  "mcu": "ATSAMD21G18A",
+  "desc": "Roland Juno-inspired dual oscillator in Eurorack format.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "wntrblm/Helium",
+  "title": "Winterbloom Helium",
+  "category": "audio",
+  "mcu": "none",
+  "desc": "Precision buffered multiple and precision adder for Eurorack.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "emeb/RP2040_Audio",
+  "title": "RP2040 Audio",
+  "category": "audio",
+  "mcu": "RP2040",
+  "desc": "Eurorack module for stereo audio effects based on the RP2040.",
+  "license": "MIT"
+ },
+ {
+  "repo": "rheslip/2HPico-Eurorack-Module-Hardware",
+  "title": "2HPico / 4HPico",
+  "category": "audio",
+  "mcu": "RP2350 (Raspberry Pi Pico 2)",
+  "desc": "2HP and 4HP Eurorack modules based on the Raspberry Pi Pico 2, including DSP versions.",
+  "license": ""
+ },
+ {
+  "repo": "jypma/modsynth",
+  "title": "modsynth Eurorack Modules",
+  "category": "audio",
+  "mcu": "none (ATmega328P in DuinoRack)",
+  "desc": "Collection of Eurorack synth modules (VCO, VCF, VCA, ADSR, delay, mixer and more) in KiCad.",
+  "license": ""
+ },
+ {
+  "repo": "Jana-Marie/MINIMIX",
+  "title": "MINIMIX",
+  "category": "audio",
+  "mcu": "none",
+  "desc": "Minimal 2x4 or 1x8 audio mixer.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "polpo/picogus",
+  "title": "PicoGUS",
+  "category": "audio",
+  "mcu": "RP2040",
+  "desc": "ISA sound card that emulates a Gravis Ultrasound, Sound Blaster, MPU-401 and more on an RP2040.",
+  "license": ""
+ },
+ {
+  "repo": "ClemensElflein/xESC",
+  "title": "xESC2",
+  "category": "robotics",
+  "mcu": "STM32F405",
+  "desc": "Low-cost BLDC motor controller running VESC-based firmware with FOC support.",
+  "license": "CC-BY-NC-SA-4.0"
+ },
+ {
+  "repo": "ClemensElflein/xESC2040",
+  "title": "xESC2040",
+  "category": "robotics",
+  "mcu": "RP2040",
+  "desc": "RP2040-based version of the xESC brushless motor controller.",
+  "license": "CC-BY-NC-SA-4.0"
+ },
+ {
+  "repo": "mjbots/moteus",
+  "title": "moteus",
+  "category": "robotics",
+  "mcu": "STM32G474",
+  "desc": "Brushless servo motor controllers (c1, x1) with CAN-FD for robotics.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "mjbots/fdcanusb",
+  "title": "fdcanusb",
+  "category": "robotics",
+  "mcu": "STM32G474",
+  "desc": "USB to CAN-FD adapter with gs_usb and virtual serial port interfaces.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "ukmars/ukmarsbot",
+  "title": "UKMARSBOT",
+  "category": "robotics",
+  "mcu": "ATmega328P (Arduino Nano)",
+  "desc": "Beginner robot platform for line following, wall following, drag race and mini-sumo contests.",
+  "license": "MIT"
+ },
+ {
+  "repo": "Twisted-Fields/rp2040-motor-controller",
+  "title": "Twisted Fields RP2040 Motor Controller",
+  "category": "robotics",
+  "mcu": "RP2040",
+  "desc": "Dual-channel brushless motor controller with CAN bus, built for the Acorn farm robot.",
+  "license": "CERN-OHL-P-2.0"
+ },
+ {
+  "repo": "sparkfun/SparkFun_XRP_Controller",
+  "title": "SparkFun XRP Controller",
+  "category": "robotics",
+  "mcu": "RP2350B",
+  "desc": "Controller board for the Experiential Robotics Platform (XRP) kits.",
+  "license": "CC-BY-SA-4.0"
+ },
+ {
+  "repo": "ferrox-rc/wingfc-hardware",
+  "title": "WingFC Carrier",
+  "category": "robotics",
+  "mcu": "nRF52840 (Seeed XIAO Sense)",
+  "desc": "Flight-controller carrier board for small FPV flying wings, hosting a Seeed XIAO nRF52840 Sense.",
+  "license": "MIT"
+ },
+ {
+  "repo": "opulo-inc/lumenpnp",
+  "title": "LumenPnP",
+  "category": "robotics",
+  "mcu": "STM32F407",
+  "desc": "Open-source pick-and-place machine: motherboard, feeder and sensor boards.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "Duet3D/Duet3-Mainboard-6HC",
+  "title": "Duet 3 Mainboard 6HC",
+  "category": "robotics",
+  "mcu": "ATSAME70Q20",
+  "desc": "Flagship Duet 3 controller for 3D printers, CNC machines and laser cutters.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "Duet3D/Duet3-Mainboard-6XD",
+  "title": "Duet 3 Mainboard 6XD",
+  "category": "robotics",
+  "mcu": "ATSAME70Q20",
+  "desc": "Duet 3 controller for six external step/direction drivers with opto-isolated I/O.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "Duet3D/Duet3-Mini5plus",
+  "title": "Duet 3 Mini 5+",
+  "category": "robotics",
+  "mcu": "ATSAME54P20A",
+  "desc": "Compact Duet 3 motion controller for small and medium machines.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "Duet3D/Duet3-Expansion-3HC",
+  "title": "Duet 3 Expansion 3HC",
+  "category": "robotics",
+  "mcu": "ATSAME51N19",
+  "desc": "CAN-FD expansion board with three high-current stepper drivers, heaters, fans and GPIO.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "Duet3D/Duet3-Expansion-1XD",
+  "title": "Duet 3 Expansion 1XD",
+  "category": "robotics",
+  "mcu": "ATSAMC21G18",
+  "desc": "CAN-FD expansion board for one external stepper driver.",
+  "license": "CERN-OHL-W-2.0"
+ },
+ {
+  "repo": "Smoothieware/Smoothieboard2",
+  "title": "Smoothieboard v2",
+  "category": "robotics",
+  "mcu": "STM32H745",
+  "desc": "Second-generation Smoothieboard CNC/3D-printer controller and extension boards.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "VoronDesign/Voron-Hardware",
+  "title": "Voron Hardware",
+  "category": "robotics",
+  "mcu": "RP2040 (V0 Display)",
+  "desc": "Accessory PCBs from the Voron 3D printer project, including the RP2040 V0 display and LED boards.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "TinyTapeout/tt-demo-pcb",
+  "title": "Tiny Tapeout Demo Board",
+  "category": "other",
+  "mcu": "RP2350",
+  "desc": "Demo board for Tiny Tapeout ASICs with DIP switches, 7-segment display, PMODs and an on-board RP2 controller.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "Polprzewodnikowy/SummerCart64",
+  "title": "SummerCart64",
+  "category": "other",
+  "mcu": "MachXO2 FPGA + STM32G030",
+  "desc": "Fully open-source Nintendo 64 flashcart with SDRAM, flash and SD card save support.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "Gekkio/gb-hardware",
+  "title": "Game Boy Hardware (Gekkio)",
+  "category": "other",
+  "mcu": "none / PIC18F45K50 (some boards)",
+  "desc": "Custom Game Boy related boards: cartridges, breakouts and test benches.",
+  "license": "CC-BY-4.0"
+ },
+ {
+  "repo": "rusefi/rusefi-hardware",
+  "title": "rusEFI Hardware",
+  "category": "other",
+  "mcu": "STM32F103 / STM32G474 (various)",
+  "desc": "Engine-control hardware from rusEFI: connector breakouts, ignition/injector drivers and small ECUs.",
+  "license": ""
+ },
+ {
+  "repo": "mck1117/wideband",
+  "title": "rusEFI Wideband Controller",
+  "category": "other",
+  "mcu": "STM32F042",
+  "desc": "Wideband oxygen-sensor controller for engine tuning, standalone or built into rusEFI boards.",
+  "license": "MIT"
+ },
+ {
+  "repo": "oresat/oresat-c3-hardware",
+  "title": "OreSat C3 Card",
+  "category": "other",
+  "mcu": "OSD3358 (AM335x SiP)",
+  "desc": "Command, communication and control (on-board computer) card for the OreSat CubeSat.",
+  "license": "CERN-OHL-S-2.0"
+ },
+ {
+  "repo": "rice-eclipse/flight-computer",
+  "title": "Strix Flight Computer",
+  "category": "other",
+  "mcu": "STM32L476",
+  "desc": "STM32-based rocket flight computer reading IMUs, altimeters and GPS and firing pyro channels.",
+  "license": ""
+ },
+ {
+  "repo": "caipiblack/STM32-CAN-Bus-board",
+  "title": "STM32 CAN Bus Shield",
+  "category": "other",
+  "mcu": "none (for NUCLEO-L432KC)",
+  "desc": "CAN bus shield with 12/24 V supply for the NUCLEO-L432KC board.",
+  "license": "GPL-3.0"
+ },
+ {
+  "repo": "solderparty/keyboard_featherwing_hw",
+  "title": "Keyboard FeatherWing",
+  "category": "other",
+  "mcu": "ATSAMD20 (keyboard controller)",
+  "desc": "FeatherWing with a thumb QWERTY keyboard and 2.6-inch touch LCD for Adafruit Feather boards.",
+  "license": "CERN-OHL-1.2"
+ },
+ {
+  "repo": "antmicro/jetson-orin-baseboard",
+  "title": "Antmicro Jetson Orin Baseboard",
+  "category": "other",
+  "mcu": "NVIDIA Jetson Orin NX / Nano SoM",
+  "desc": "Open-hardware baseboard for NVIDIA Jetson Orin NX and Orin Nano modules, designed in KiCad 9.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "antmicro/jetson-nano-baseboard",
+  "title": "Antmicro Jetson Nano Baseboard",
+  "category": "other",
+  "mcu": "NVIDIA Jetson Nano / Xavier NX SoM",
+  "desc": "Open-hardware baseboard for NVIDIA Jetson Nano, Xavier NX and TX2 NX modules.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "antmicro/hdmi-mipi-bridge",
+  "title": "Antmicro HDMI-MIPI Bridge",
+  "category": "other",
+  "mcu": "none (Toshiba TC358743)",
+  "desc": "Dual-channel HDMI to MIPI CSI-2 video bridge built on the Toshiba TC358743.",
+  "license": "Apache-2.0"
+ },
+ {
+  "repo": "Jana-Marie/OtterCam-s3",
+  "title": "OtterCam-s3",
+  "category": "other",
+  "mcu": "Sochip S3 (Cortex-A7)",
+  "desc": "Open-source 1080p60 USB and IP camera built around the Sochip S3 SoC and an OS05A10/OS05A20 MIPI image sensor.",
+  "license": "CERN-OHL-S-2.0"
+ }
+]

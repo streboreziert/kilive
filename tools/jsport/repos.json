@@ -1,0 +1,114 @@
+[
+ {
+  "key": "anyon-e__motherboard__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "motherboard/motherboard.kicad_pcb",
+  "sch": "motherboard/motherboard.kicad_sch"
+ },
+ {
+  "key": "anyon-e__power__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "power/power.kicad_pcb",
+  "sch": "power/power.kicad_sch"
+ },
+ {
+  "key": "anyon-e__keyboard__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "keyboard/keyboard.kicad_pcb",
+  "sch": "keyboard/keyboard.kicad_sch"
+ },
+ {
+  "key": "anyon-e__audio__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "audio/audio.kicad_pcb",
+  "sch": "audio/audio.kicad_sch"
+ },
+ {
+  "key": "anyon-e__display_eval__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "motherboard/display_eval/display_eval.kicad_pcb",
+  "sch": "motherboard/display_eval/display_eval.kicad_sch"
+ },
+ {
+  "key": "anyon-e__display_eval_short__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "motherboard/display_eval_short/display_eval_short.kicad_pcb",
+  "sch": "motherboard/display_eval_short/display_eval_short.kicad_sch"
+ },
+ {
+  "key": "anyon-e__switch__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "switch/switch.kicad_pcb",
+  "sch": "switch/switch.kicad_sch"
+ },
+ {
+  "key": "anyon-e__encoder__v1",
+  "dir": "anyon_e",
+  "name": "laptop",
+  "pcb": "haptic/encoder/encoder.kicad_pcb",
+  "sch": "haptic/encoder/encoder.kicad_sch"
+ },
+ {
+  "key": "glasgow__glasgow__revC3",
+  "dir": "glasgow",
+  "name": "glasgow",
+  "pcb": "hardware/boards/glasgow/revC3/glasgow.kicad_pcb",
+  "sch": "hardware/boards/glasgow/revC3/glasgow.kicad_sch"
+ },
+ {
+  "key": "glasgow__glasgow__revD0",
+  "dir": "glasgow",
+  "name": "glasgow",
+  "pcb": "hardware/boards/glasgow/revD0/glasgow.kicad_pcb",
+  "sch": "hardware/boards/glasgow/revD0/glasgow.kicad_sch"
+ },
+ {
+  "key": "glasgow__glasgow__revD1",
+  "dir": "glasgow",
+  "name": "glasgow",
+  "pcb": "hardware/boards/glasgow/revD1/glasgow.kicad_pcb",
+  "sch": "hardware/boards/glasgow/revD1/glasgow.kicad_sch"
+ },
+ {
+  "key": "hackrf__hackrf-one__r10",
+  "dir": "hackrf",
+  "name": "hackrf",
+  "pcb": "hardware/hackrf-one/hackrf-one.kicad_pcb",
+  "sch": "hardware/hackrf-one/hackrf-one.kicad_sch"
+ },
+ {
+  "key": "bus-pirate__bus-pirate__5-REV10A",
+  "dir": "BusPirate5-hardware",
+  "name": "BusPirate5-hardware",
+  "pcb": "bus_pirate_pcb/5-REV10A/REV10a.kicad_pcb",
+  "sch": "bus_pirate_pcb/5-REV10A/REV10a.kicad_sch"
+ },
+ {
+  "key": "bus-pirate__bus-pirate__5XL-REV0",
+  "dir": "BusPirate5-hardware",
+  "name": "BusPirate5-hardware",
+  "pcb": "bus_pirate_pcb/5XL-REV0/5XL-REV0.kicad_pcb",
+  "sch": "bus_pirate_pcb/5XL-REV0/5XL-REV0.kicad_sch"
+ },
+ {
+  "key": "bus-pirate__bus-pirate__6-REV2B",
+  "dir": "BusPirate5-hardware",
+  "name": "BusPirate5-hardware",
+  "pcb": "bus_pirate_pcb/6-REV2B/6-REV2b.kicad_pcb",
+  "sch": "bus_pirate_pcb/6-REV2B/6-REV2b.kicad_sch"
+ },
+ {
+  "key": "rp2040-guide__rp2040-guide__v0.1",
+  "dir": "RP2040-designguide",
+  "name": "RP2040-designguide",
+  "pcb": "PCB/RP2040-Guide.kicad_pcb",
+  "sch": "PCB/RP2040-Guide.kicad_sch"
+ }
+]

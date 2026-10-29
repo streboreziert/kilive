@@ -1,0 +1,576 @@
+{
+ "part": {
+  "mpn": "TPS54331",
+  "manufacturer": "Texas Instruments",
+  "description": "3.5-V to 28-V input, 3-A step-down converter",
+  "package": "SOIC-8",
+  "datasheet_url": "https://www.ti.com/lit/ds/symlink/tps54331.pdf"
+ },
+ "design": {
+  "title": "TPS54331 3.3 V / 3 A buck converter",
+  "page": 17,
+  "description": "Typical application: 7 V to 28 V input, 3.3 V output at up to 3 A, 570 kHz."
+ },
+ "components": [
+  {
+   "ref": "U1",
+   "type": "ic",
+   "value": "TPS54331",
+   "mpn": "TPS54331DR",
+   "manufacturer": "Texas Instruments",
+   "description": "3A 28V step-down converter",
+   "package": "SOIC-8",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": [
+    {
+     "number": "1",
+     "name": "BOOT",
+     "etype": "passive",
+     "side": "right"
+    },
+    {
+     "number": "2",
+     "name": "VIN",
+     "etype": "power_in",
+     "side": "left"
+    },
+    {
+     "number": "3",
+     "name": "EN",
+     "etype": "input",
+     "side": "left"
+    },
+    {
+     "number": "4",
+     "name": "SS",
+     "etype": "passive",
+     "side": "left"
+    },
+    {
+     "number": "5",
+     "name": "VSENSE",
+     "etype": "input",
+     "side": "right"
+    },
+    {
+     "number": "6",
+     "name": "COMP",
+     "etype": "passive",
+     "side": "left"
+    },
+    {
+     "number": "7",
+     "name": "GND",
+     "etype": "power_in",
+     "side": "bottom"
+    },
+    {
+     "number": "8",
+     "name": "PH",
+     "etype": "output",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "ref": "C1",
+   "type": "capacitor",
+   "value": "4.7uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "1206",
+   "rating": "50V X7R",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C2",
+   "type": "capacitor",
+   "value": "4.7uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "1206",
+   "rating": "50V X7R",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C3",
+   "type": "capacitor",
+   "value": "0.01uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "50V",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C4",
+   "type": "capacitor",
+   "value": "0.1uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "25V",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C5",
+   "type": "capacitor",
+   "value": "0.015uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C6",
+   "type": "capacitor",
+   "value": "1000pF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C7",
+   "type": "capacitor",
+   "value": "47pF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C8",
+   "type": "capacitor",
+   "value": "47uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "1210",
+   "rating": "10V X5R",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C9",
+   "type": "capacitor",
+   "value": "47uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "1210",
+   "rating": "10V X5R",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R1",
+   "type": "resistor",
+   "value": "332k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "1%",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R2",
+   "type": "resistor",
+   "value": "68.1k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "1%",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R3",
+   "type": "resistor",
+   "value": "29.4k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "1%",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R5",
+   "type": "resistor",
+   "value": "10.2k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "1%",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R6",
+   "type": "resistor",
+   "value": "3.24k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "1%",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "L1",
+   "type": "inductor",
+   "value": "6.8uH",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "4.5A",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "D1",
+   "type": "schottky_diode",
+   "value": "B340A",
+   "mpn": "B340A-13-F",
+   "manufacturer": "",
+   "description": "",
+   "package": "SMA",
+   "rating": "40V 3A",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  }
+ ],
+ "nets": [
+  {
+   "name": "VIN",
+   "kind": "power",
+   "port": "input",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "2"
+    },
+    {
+     "ref": "C1",
+     "pin": "1"
+    },
+    {
+     "ref": "C2",
+     "pin": "1"
+    },
+    {
+     "ref": "C3",
+     "pin": "1"
+    },
+    {
+     "ref": "R1",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "kind": "ground",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "7"
+    },
+    {
+     "ref": "C1",
+     "pin": "2"
+    },
+    {
+     "ref": "C2",
+     "pin": "2"
+    },
+    {
+     "ref": "C3",
+     "pin": "2"
+    },
+    {
+     "ref": "R2",
+     "pin": "2"
+    },
+    {
+     "ref": "C5",
+     "pin": "2"
+    },
+    {
+     "ref": "C6",
+     "pin": "2"
+    },
+    {
+     "ref": "C7",
+     "pin": "2"
+    },
+    {
+     "ref": "D1",
+     "pin": "A"
+    },
+    {
+     "ref": "C8",
+     "pin": "2"
+    },
+    {
+     "ref": "C9",
+     "pin": "2"
+    },
+    {
+     "ref": "R6",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "EN",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "3"
+    },
+    {
+     "ref": "R1",
+     "pin": "2"
+    },
+    {
+     "ref": "R2",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "SS",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "4"
+    },
+    {
+     "ref": "C5",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "BOOT",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "1"
+    },
+    {
+     "ref": "C4",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "PH",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "8"
+    },
+    {
+     "ref": "C4",
+     "pin": "2"
+    },
+    {
+     "ref": "D1",
+     "pin": "K"
+    },
+    {
+     "ref": "L1",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "VOUT",
+   "kind": "power",
+   "port": "output",
+   "nodes": [
+    {
+     "ref": "L1",
+     "pin": "2"
+    },
+    {
+     "ref": "C8",
+     "pin": "1"
+    },
+    {
+     "ref": "C9",
+     "pin": "1"
+    },
+    {
+     "ref": "R5",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "VSENSE",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "5"
+    },
+    {
+     "ref": "R5",
+     "pin": "2"
+    },
+    {
+     "ref": "R6",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "COMP",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "6"
+    },
+    {
+     "ref": "R3",
+     "pin": "1"
+    },
+    {
+     "ref": "C7",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "R3",
+     "pin": "2"
+    },
+    {
+     "ref": "C6",
+     "pin": "1"
+    }
+   ]
+  }
+ ],
+ "no_connects": [],
+ "notes": [
+  "VOUT = 0.8 V x (1 + R5/R6)",
+  "UVLO set by R1/R2: start 6.6 V, stop 5.5 V",
+  "Soft-start time set by C5"
+ ],
+ "warnings": []
+}

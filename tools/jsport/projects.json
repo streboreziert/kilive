@@ -1,0 +1,418 @@
+{
+ "anyon_e": [
+  {
+   "name": "motherboard",
+   "folder": "motherboard",
+   "pcb": "motherboard/motherboard.kicad_pcb",
+   "sch": "motherboard/motherboard.kicad_sch",
+   "pro": "motherboard/motherboard.kicad_pro"
+  },
+  {
+   "name": "power",
+   "folder": "power",
+   "pcb": "power/power.kicad_pcb",
+   "sch": "power/power.kicad_sch",
+   "pro": "power/power.kicad_pro"
+  },
+  {
+   "name": "keyboard",
+   "folder": "keyboard",
+   "pcb": "keyboard/keyboard.kicad_pcb",
+   "sch": "keyboard/keyboard.kicad_sch",
+   "pro": "keyboard/keyboard.kicad_pro"
+  },
+  {
+   "name": "audio",
+   "folder": "audio",
+   "pcb": "audio/audio.kicad_pcb",
+   "sch": "audio/audio.kicad_sch",
+   "pro": "audio/audio.kicad_pro"
+  },
+  {
+   "name": "display_eval",
+   "folder": "motherboard/display_eval",
+   "pcb": "motherboard/display_eval/display_eval.kicad_pcb",
+   "sch": "motherboard/display_eval/display_eval.kicad_sch",
+   "pro": "motherboard/display_eval/display_eval.kicad_pro"
+  },
+  {
+   "name": "display_eval_short",
+   "folder": "motherboard/display_eval_short",
+   "pcb": "motherboard/display_eval_short/display_eval_short.kicad_pcb",
+   "sch": "motherboard/display_eval_short/display_eval_short.kicad_sch",
+   "pro": "motherboard/display_eval_short/display_eval_short.kicad_pro"
+  },
+  {
+   "name": "protector",
+   "folder": "keyboard/protector",
+   "pcb": "keyboard/protector/protector.kicad_pcb",
+   "sch": "keyboard/protector/protector.kicad_sch",
+   "pro": "keyboard/protector/protector.kicad_pro"
+  },
+  {
+   "name": "haptic",
+   "folder": "haptic",
+   "pcb": "haptic/haptic.kicad_pcb",
+   "sch": "haptic/haptic.kicad_sch",
+   "pro": "haptic/haptic.kicad_pro"
+  },
+  {
+   "name": "switch",
+   "folder": "switch",
+   "pcb": "switch/switch.kicad_pcb",
+   "sch": "switch/switch.kicad_sch",
+   "pro": "switch/switch.kicad_pro"
+  },
+  {
+   "name": "encoder",
+   "folder": "haptic/encoder",
+   "pcb": "haptic/encoder/encoder.kicad_pcb",
+   "sch": "haptic/encoder/encoder.kicad_sch",
+   "pro": "haptic/encoder/encoder.kicad_pro"
+  }
+ ],
+ "glasgow": [
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revD1",
+   "pcb": "hardware/boards/glasgow/revD1/glasgow.kicad_pcb",
+   "sch": "hardware/boards/glasgow/revD1/glasgow.kicad_sch",
+   "pro": "hardware/boards/glasgow/revD1/glasgow.kicad_pro"
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revD0",
+   "pcb": "hardware/boards/glasgow/revD0/glasgow.kicad_pcb",
+   "sch": "hardware/boards/glasgow/revD0/glasgow.kicad_sch",
+   "pro": "hardware/boards/glasgow/revD0/glasgow.kicad_pro"
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revC3",
+   "pcb": "hardware/boards/glasgow/revC3/glasgow.kicad_pcb",
+   "sch": "hardware/boards/glasgow/revC3/glasgow.kicad_sch",
+   "pro": "hardware/boards/glasgow/revC3/glasgow.kicad_pro"
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revC2",
+   "pcb": "hardware/boards/glasgow/revC2/glasgow.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revC1",
+   "pcb": "hardware/boards/glasgow/revC1/glasgow.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revC0",
+   "pcb": "hardware/boards/glasgow/revC0/glasgow.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "test-jig",
+   "folder": "hardware/boards/test-jig",
+   "pcb": "hardware/boards/test-jig/test-jig.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revB",
+   "pcb": "hardware/boards/glasgow/revB/glasgow.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "glasgow",
+   "folder": "hardware/boards/glasgow/revA",
+   "pcb": "hardware/boards/glasgow/revA/glasgow.kicad_pcb",
+   "sch": null,
+   "pro": null
+  }
+ ],
+ "hackrf": [
+  {
+   "name": "hackrf-one",
+   "folder": "hardware/hackrf-one",
+   "pcb": "hardware/hackrf-one/hackrf-one.kicad_pcb",
+   "sch": "hardware/hackrf-one/hackrf-one.kicad_sch",
+   "pro": "hardware/hackrf-one/hackrf-one.kicad_pro"
+  },
+  {
+   "name": "marzipan",
+   "folder": "hardware/marzipan",
+   "pcb": "hardware/marzipan/marzipan.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "neapolitan",
+   "folder": "hardware/neapolitan",
+   "pcb": "hardware/neapolitan/neapolitan.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "operacake",
+   "folder": "hardware/operacake",
+   "pcb": "hardware/operacake/operacake.kicad_pcb",
+   "sch": null,
+   "pro": null
+  },
+  {
+   "name": "LNA915",
+   "folder": "hardware/LNA915",
+   "pcb": "hardware/LNA915/LNA915.kicad_pcb",
+   "sch": null,
+   "pro": null
+  }
+ ],
+ "BusPirate5-hardware": [
+  {
+   "name": "blank-plank-rev0b",
+   "folder": "adapter-blank-plank-1REV0B",
+   "pcb": "adapter-blank-plank-1REV0B/blank-plank-rev0b.kicad_pcb",
+   "sch": "adapter-blank-plank-1REV0B/blank-plank-rev0b.kicad_sch",
+   "pro": "adapter-blank-plank-1REV0B/blank-plank-rev0b.kicad_pro"
+  },
+  {
+   "name": "7-REV2-vout-protection",
+   "folder": "bus_pirate_pcb/development/7-REV2-prototype3a",
+   "pcb": "bus_pirate_pcb/development/7-REV2-prototype3a/7-REV2-vout-protection.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/7-REV2-prototype3a/7-REV2-vout-protection.kicad_sch",
+   "pro": "bus_pirate_pcb/development/7-REV2-prototype3a/7-REV2-vout-protection.kicad_pro"
+  },
+  {
+   "name": "REV10a",
+   "folder": "bus_pirate_pcb/5-REV10A",
+   "pcb": "bus_pirate_pcb/5-REV10A/REV10a.kicad_pcb",
+   "sch": "bus_pirate_pcb/5-REV10A/REV10a.kicad_sch",
+   "pro": "bus_pirate_pcb/5-REV10A/REV10a.kicad_pro"
+  },
+  {
+   "name": "BusPirate-5-rev10",
+   "folder": "bus_pirate_pcb/development/5-REV10-PFET-bug",
+   "pcb": "bus_pirate_pcb/development/5-REV10-PFET-bug/BusPirate-5-rev10.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/5-REV10-PFET-bug/BusPirate-5-rev10.kicad_sch",
+   "pro": "bus_pirate_pcb/development/5-REV10-PFET-bug/BusPirate-5-rev10.kicad_pro"
+  },
+  {
+   "name": "7-REV2-vout-protection",
+   "folder": "bus_pirate_pcb/development/7-REV2-prototype3b-side-leds",
+   "pcb": "bus_pirate_pcb/development/7-REV2-prototype3b-side-leds/7-REV2-vout-protection.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/7-REV2-prototype3b-side-leds/7-REV2-vout-protection.kicad_sch",
+   "pro": "bus_pirate_pcb/development/7-REV2-prototype3b-side-leds/7-REV2-vout-protection.kicad_pro"
+  },
+  {
+   "name": "6-REV2b",
+   "folder": "bus_pirate_pcb/6-REV2B",
+   "pcb": "bus_pirate_pcb/6-REV2B/6-REV2b.kicad_pcb",
+   "sch": "bus_pirate_pcb/6-REV2B/6-REV2b.kicad_sch",
+   "pro": "bus_pirate_pcb/6-REV2B/6-REV2b.kicad_pro"
+  },
+  {
+   "name": "5XL-REV0",
+   "folder": "bus_pirate_pcb/5XL-REV0",
+   "pcb": "bus_pirate_pcb/5XL-REV0/5XL-REV0.kicad_pcb",
+   "sch": "bus_pirate_pcb/5XL-REV0/5XL-REV0.kicad_sch",
+   "pro": "bus_pirate_pcb/5XL-REV0/5XL-REV0.kicad_pro"
+  },
+  {
+   "name": "7-REV1B",
+   "folder": "bus_pirate_pcb/development/7-REV1B-prototype-2",
+   "pcb": "bus_pirate_pcb/development/7-REV1B-prototype-2/7-REV1B.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/7-REV1B-prototype-2/7-REV1B.kicad_sch",
+   "pro": "bus_pirate_pcb/development/7-REV1B-prototype-2/7-REV1B.kicad_pro"
+  },
+  {
+   "name": "7-REV1-freeze",
+   "folder": "bus_pirate_pcb/development/7-REV1-vout-protection",
+   "pcb": "bus_pirate_pcb/development/7-REV1-vout-protection/7-REV1-freeze.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/7-REV1-vout-protection/7-REV1-freeze.kicad_sch",
+   "pro": "bus_pirate_pcb/development/7-REV1-vout-protection/7-REV1-freeze.kicad_pro"
+  },
+  {
+   "name": "7-REV0",
+   "folder": "bus_pirate_pcb/development/7-REV0A-prototype-1",
+   "pcb": "bus_pirate_pcb/development/7-REV0A-prototype-1/7-REV0.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/7-REV0A-prototype-1/7-REV0.kicad_sch",
+   "pro": "bus_pirate_pcb/development/7-REV0A-prototype-1/7-REV0.kicad_pro"
+  },
+  {
+   "name": "ram-ddr5-1REV1",
+   "folder": "development/adapter-ram-ddr5-1REV1",
+   "pcb": "development/adapter-ram-ddr5-1REV1/ram-ddr5-1REV1.kicad_pcb",
+   "sch": "development/adapter-ram-ddr5-1REV1/ram-ddr5-1REV1.kicad_sch",
+   "pro": "development/adapter-ram-ddr5-1REV1/ram-ddr5-1REV1.kicad_pro"
+  },
+  {
+   "name": "ram-ddr5",
+   "folder": "development/adapter-ram-ddr5-1REV0",
+   "pcb": "development/adapter-ram-ddr5-1REV0/ram-ddr5.kicad_pcb",
+   "sch": "development/adapter-ram-ddr5-1REV0/ram-ddr5.kicad_sch",
+   "pro": "development/adapter-ram-ddr5-1REV0/ram-ddr5.kicad_pro"
+  },
+  {
+   "name": "adapter-ram-ddr5-1REV2",
+   "folder": "adapter-ram-ddr5-1REV2",
+   "pcb": "adapter-ram-ddr5-1REV2/adapter-ram-ddr5-1REV2.kicad_pcb",
+   "sch": "adapter-ram-ddr5-1REV2/adapter-ram-ddr5-1REV2.kicad_sch",
+   "pro": "adapter-ram-ddr5-1REV2/adapter-ram-ddr5-1REV2.kicad_pro"
+  },
+  {
+   "name": "kaybee-plank",
+   "folder": "development/adapter-kaybee-plank-1REV1",
+   "pcb": "development/adapter-kaybee-plank-1REV1/kaybee-plank.kicad_pcb",
+   "sch": "development/adapter-kaybee-plank-1REV1/kaybee-plank.kicad_sch",
+   "pro": "development/adapter-kaybee-plank-1REV1/kaybee-plank.kicad_pro"
+  },
+  {
+   "name": "bp5-ir-toy-v3-rev3",
+   "folder": "adapter-ir-toy-3REV3",
+   "pcb": "adapter-ir-toy-3REV3/bp5-ir-toy-v3-rev3.kicad_pcb",
+   "sch": "adapter-ir-toy-3REV3/bp5-ir-toy-v3-rev3.kicad_sch",
+   "pro": "adapter-ir-toy-3REV3/bp5-ir-toy-v3-rev3.kicad_pro"
+  },
+  {
+   "name": "sim-rev3c",
+   "folder": "adapter-sim-iccard-1REV3C",
+   "pcb": "adapter-sim-iccard-1REV3C/sim-rev3c.kicad_pcb",
+   "sch": "adapter-sim-iccard-1REV3C/sim-rev3c.kicad_sch",
+   "pro": "adapter-sim-iccard-1REV3C/sim-rev3c.kicad_pro"
+  },
+  {
+   "name": "kaybee-plank",
+   "folder": "development/adapter-kaybee-plank-1REV0",
+   "pcb": "development/adapter-kaybee-plank-1REV0/kaybee-plank.kicad_pcb",
+   "sch": "development/adapter-kaybee-plank-1REV0/kaybee-plank.kicad_sch",
+   "pro": "development/adapter-kaybee-plank-1REV0/kaybee-plank.kicad_pro"
+  },
+  {
+   "name": "flash-sop-rev3",
+   "folder": "adapter-flash-sop-1REV3",
+   "pcb": "adapter-flash-sop-1REV3/flash-sop-rev3.kicad_pcb",
+   "sch": "adapter-flash-sop-1REV3/flash-sop-rev3.kicad_sch",
+   "pro": "adapter-flash-sop-1REV3/flash-sop-rev3.kicad_pro"
+  },
+  {
+   "name": "rs232-dual-adapter",
+   "folder": "adapter-rs232-dual-1REV0",
+   "pcb": "adapter-rs232-dual-1REV0/rs232-dual-adapter.kicad_pcb",
+   "sch": "adapter-rs232-dual-1REV0/rs232-dual-adapter.kicad_sch",
+   "pro": "adapter-rs232-dual-1REV0/rs232-dual-adapter.kicad_pro"
+  },
+  {
+   "name": "flash-sop-rev4",
+   "folder": "development/adapter-flash-sop-1REV4",
+   "pcb": "development/adapter-flash-sop-1REV4/flash-sop-rev4.kicad_pcb",
+   "sch": "development/adapter-flash-sop-1REV4/flash-sop-rev4.kicad_sch",
+   "pro": "development/adapter-flash-sop-1REV4/flash-sop-rev4.kicad_pro"
+  },
+  {
+   "name": "sim-iccard-rev4",
+   "folder": "development/adapter-sim-iccard-1REV4",
+   "pcb": "development/adapter-sim-iccard-1REV4/sim-iccard-rev4.kicad_pcb",
+   "sch": "development/adapter-sim-iccard-1REV4/sim-iccard-rev4.kicad_sch",
+   "pro": "development/adapter-sim-iccard-1REV4/sim-iccard-rev4.kicad_pro"
+  },
+  {
+   "name": "vpp-maker-rev6-ian",
+   "folder": "adapter-vpp-maker-1REV6",
+   "pcb": "adapter-vpp-maker-1REV6/vpp-maker-rev6-ian.kicad_pcb",
+   "sch": "adapter-vpp-maker-1REV6/vpp-maker-rev6-ian.kicad_sch",
+   "pro": "adapter-vpp-maker-1REV6/vpp-maker-rev6-ian.kicad_pro"
+  },
+  {
+   "name": "stemma-qwiic-grove-gravity-bog-plank-1REV1",
+   "folder": "adapter-stemma-qwiic-grove-gravity-bog-plank-1REV1",
+   "pcb": "adapter-stemma-qwiic-grove-gravity-bog-plank-1REV1/stemma-qwiic-grove-gravity-bog-plank-1REV1.kicad_pcb",
+   "sch": "adapter-stemma-qwiic-grove-gravity-bog-plank-1REV1/stemma-qwiic-grove-gravity-bog-plank-1REV1.kicad_sch",
+   "pro": "adapter-stemma-qwiic-grove-gravity-bog-plank-1REV1/stemma-qwiic-grove-gravity-bog-plank-1REV1.kicad_pro"
+  },
+  {
+   "name": "stemma-qwiic-grove-gravity-bog-plank",
+   "folder": "development/adapter-stemma-qwiic-grove-gravity-bog-1REV0",
+   "pcb": "development/adapter-stemma-qwiic-grove-gravity-bog-1REV0/stemma-qwiic-grove-gravity-bog-plank.kicad_pcb",
+   "sch": "development/adapter-stemma-qwiic-grove-gravity-bog-1REV0/stemma-qwiic-grove-gravity-bog-plank.kicad_sch",
+   "pro": "development/adapter-stemma-qwiic-grove-gravity-bog-1REV0/stemma-qwiic-grove-gravity-bog-plank.kicad_pro"
+  },
+  {
+   "name": "flash-sop-lotes-rev3",
+   "folder": "adapter-flash-sop-lotes-1REV3",
+   "pcb": "adapter-flash-sop-lotes-1REV3/flash-sop-lotes-rev3.kicad_pcb",
+   "sch": "adapter-flash-sop-lotes-1REV3/flash-sop-lotes-rev3.kicad_sch",
+   "pro": "adapter-flash-sop-lotes-1REV3/flash-sop-lotes-rev3.kicad_pro"
+  },
+  {
+   "name": "flash-wson-rev3",
+   "folder": "adapter-flash-wson-1REV3",
+   "pcb": "adapter-flash-wson-1REV3/flash-wson-rev3.kicad_pcb",
+   "sch": "adapter-flash-wson-1REV3/flash-wson-rev3.kicad_sch",
+   "pro": "adapter-flash-wson-1REV3/flash-wson-rev3.kicad_pro"
+  },
+  {
+   "name": "flash-zif-rev3",
+   "folder": "adapter-flash-dip-1REV3",
+   "pcb": "adapter-flash-dip-1REV3/flash-zif-rev3.kicad_pcb",
+   "sch": "adapter-flash-dip-1REV3/flash-zif-rev3.kicad_sch",
+   "pro": "adapter-flash-dip-1REV3/flash-zif-rev3.kicad_pro"
+  },
+  {
+   "name": "flash-dip-rev4",
+   "folder": "development/adapter-flash-dip-1REV4",
+   "pcb": "development/adapter-flash-dip-1REV4/flash-dip-rev4.kicad_pcb",
+   "sch": "development/adapter-flash-dip-1REV4/flash-dip-rev4.kicad_sch",
+   "pro": "development/adapter-flash-dip-1REV4/flash-dip-rev4.kicad_pro"
+  },
+  {
+   "name": "8-REV0",
+   "folder": "bus_pirate_pcb/development/8-REV0-spi-adc-scratch",
+   "pcb": "bus_pirate_pcb/development/8-REV0-spi-adc-scratch/8-REV0.kicad_pcb",
+   "sch": "bus_pirate_pcb/development/8-REV0-spi-adc-scratch/8-REV0.kicad_sch",
+   "pro": "bus_pirate_pcb/development/8-REV0-spi-adc-scratch/8-REV0.kicad_pro"
+  },
+  {
+   "name": "wago kf141v adapter",
+   "folder": "adapter-kf141v-quick-connect-1REV0",
+   "pcb": "adapter-kf141v-quick-connect-1REV0/wago kf141v adapter.kicad_pcb",
+   "sch": "adapter-kf141v-quick-connect-1REV0/wago kf141v adapter.kicad_sch",
+   "pro": "adapter-kf141v-quick-connect-1REV0/wago kf141v adapter.kicad_pro"
+  },
+  {
+   "name": "wago kf141r adapter",
+   "folder": "adapter-kf141r-quick-connect-1REV0",
+   "pcb": "adapter-kf141r-quick-connect-1REV0/wago kf141r adapter.kicad_pcb",
+   "sch": "adapter-kf141r-quick-connect-1REV0/wago kf141r adapter.kicad_sch",
+   "pro": "adapter-kf141r-quick-connect-1REV0/wago kf141r adapter.kicad_pro"
+  },
+  {
+   "name": "BusPirate-5-rev8",
+   "folder": "bus_pirate_pcb/5-REV8",
+   "pcb": "bus_pirate_pcb/5-REV8/BusPirate-5-rev8.kicad_pcb",
+   "sch": null,
+   "pro": "bus_pirate_pcb/5-REV8/BusPirate-5-rev8.kicad_pro"
+  },
+  {
+   "name": "programming_pin_mount.v1.0",
+   "folder": "debug-station",
+   "pcb": "debug-station/programming_pin_mount.v1.0.kicad_pcb",
+   "sch": null,
+   "pro": null
+  }
+ ],
+ "RP2040-designguide": [
+  {
+   "name": "RP2040-Guide",
+   "folder": "PCB",
+   "pcb": "PCB/RP2040-Guide.kicad_pcb",
+   "sch": "PCB/RP2040-Guide.kicad_sch",
+   "pro": "PCB/RP2040-Guide.kicad_pro"
+  }
+ ]
+}

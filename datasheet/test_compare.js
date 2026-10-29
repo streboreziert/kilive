@@ -1,0 +1,10 @@
+const fs = require("fs"), assert = require("assert");
+for (const f of ["engine1.js", "engine2.js", "engine3.js", "engine4.js", "compare.js"]) require("./" + f);
+const ex = JSON.parse(fs.readFileSync("../examples/tps54331_buck.json")); const C = DS2K_CMP;
+assert.deepStrictEqual(C.diffReads(ex, ex), []); assert.deepStrictEqual(C.pinChecks(ex), [], JSON.stringify(C.pinChecks(ex)));
+const b = JSON.parse(JSON.stringify(ex)); b.components.find((c) => c.ref === "R5").value = "12k"; const comp = b.nets.find((n) => n.name === "COMP"), ss = b.nets.find((n) => n.name === "SS"); const i = comp.nodes.findIndex((x) => x.ref === "C7"); ss.nodes.push(comp.nodes.splice(i, 1)[0]); b.components = b.components.filter((c) => c.ref !== "C9"); for (const n of b.nets) n.nodes = n.nodes.filter((x) => x.ref !== "C9");
+const d = C.diffReads(ex, b); console.log(d); assert.ok(d.some((x) => /^R5: value/.test(x)) && d.some((x) => /^C9 /.test(x)) && d.some((x) => /C7\.1/.test(x))); assert.ok(d.length <= 5);
+const same = JSON.parse(JSON.stringify(ex)); same.components.find((c) => c.ref === "C3").value = "10nF"; assert.deepStrictEqual(C.diffReads(ex, same), []);
+const p = JSON.parse(JSON.stringify(ex)); const vin = p.nets.find((n) => n.name === "VIN"); vin.nodes = vin.nodes.filter((x) => x.ref !== "U1"); console.log(C.pinChecks(p)); assert.ok(C.pinChecks(p).some((x) => /supply pin/.test(x)));
+for (const f of fs.readdirSync("../examples")) if (f.endsWith(".json")) console.log(f, C.pinChecks(new DS2K.Circuit(JSON.parse(fs.readFileSync("../examples/" + f))).toDict()));
+console.log("compare tests passed");

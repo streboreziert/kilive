@@ -1,0 +1,304 @@
+{
+ "part": {
+  "mpn": "NE555",
+  "manufacturer": "Texas Instruments",
+  "package": "SOIC-8"
+ },
+ "design": {
+  "title": "NE555 astable oscillator",
+  "page": 10,
+  "description": "Astable operation"
+ },
+ "components": [
+  {
+   "ref": "U1",
+   "type": "ic",
+   "value": "NE555",
+   "mpn": "NE555DR",
+   "manufacturer": "",
+   "description": "",
+   "package": "SOIC-8",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": [
+    {
+     "number": "1",
+     "name": "GND",
+     "etype": "power_in",
+     "side": ""
+    },
+    {
+     "number": "2",
+     "name": "TRIG",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "3",
+     "name": "OUT",
+     "etype": "output",
+     "side": ""
+    },
+    {
+     "number": "4",
+     "name": "RESET",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "5",
+     "name": "CONT",
+     "etype": "passive",
+     "side": ""
+    },
+    {
+     "number": "6",
+     "name": "THRES",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "7",
+     "name": "DISCH",
+     "etype": "open_collector",
+     "side": ""
+    },
+    {
+     "number": "8",
+     "name": "VCC",
+     "etype": "power_in",
+     "side": ""
+    }
+   ]
+  },
+  {
+   "ref": "RA",
+   "type": "resistor",
+   "value": "10k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "RB",
+   "type": "resistor",
+   "value": "100k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C1",
+   "type": "capacitor",
+   "value": "10nF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C2",
+   "type": "capacitor",
+   "value": "0.01uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C3",
+   "type": "capacitor",
+   "value": "100nF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "RL",
+   "type": "resistor",
+   "value": "1k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  }
+ ],
+ "nets": [
+  {
+   "name": "VCC",
+   "kind": "power",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "8"
+    },
+    {
+     "ref": "U1",
+     "pin": "4"
+    },
+    {
+     "ref": "RA",
+     "pin": "1"
+    },
+    {
+     "ref": "C3",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "kind": "ground",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "1"
+    },
+    {
+     "ref": "C1",
+     "pin": "2"
+    },
+    {
+     "ref": "C2",
+     "pin": "2"
+    },
+    {
+     "ref": "C3",
+     "pin": "2"
+    },
+    {
+     "ref": "RL",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "DISCH",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "7"
+    },
+    {
+     "ref": "RA",
+     "pin": "2"
+    },
+    {
+     "ref": "RB",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "THRES",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "6"
+    },
+    {
+     "ref": "U1",
+     "pin": "2"
+    },
+    {
+     "ref": "RB",
+     "pin": "2"
+    },
+    {
+     "ref": "C1",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "CONT",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "5"
+    },
+    {
+     "ref": "C2",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "OUT",
+   "kind": "signal",
+   "port": "output",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "3"
+    },
+    {
+     "ref": "RL",
+     "pin": "1"
+    }
+   ]
+  }
+ ],
+ "no_connects": [],
+ "notes": [
+  "f = 1.44 / ((RA + 2 RB) C1)"
+ ],
+ "warnings": []
+}

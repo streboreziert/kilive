@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Your local stars and settings stay on this computer
+local-data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Playwright
+node_modules/
+
+# Logs
+*.log
+
+# Static site build (scripts/build_site.py)
+dist/

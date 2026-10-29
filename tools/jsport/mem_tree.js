@@ -1,0 +1,17 @@
+const fs = require('fs');
+require('/home/claude/noeti/app/js/kicad-import.js');
+const K = globalThis.Noeti.kicad;
+const f = process.argv[2];
+let txt = fs.readFileSync(f, 'utf8');
+global.gc(); const h0 = process.memoryUsage().heapUsed;
+const t0 = Date.now();
+let tree = K.parseSexpr(txt);
+const t1 = Date.now();
+global.gc(); const h1 = process.memoryUsage().heapUsed;
+let nodes = 0, toks = 0; const uniq = new Set();
+(function w(n) { nodes++; for (const c of n) { if (Array.isArray(c)) w(c); else { toks++; if (uniq.size < 3e6) uniq.add(c); } } })(tree);
+const t2 = Date.now();
+const pcb = K._py.pcbFromTree(tree);
+const t3 = Date.now();
+tree = null; global.gc(); const h2 = process.memoryUsage().heapUsed;
+console.log(`${f.split('/').pop()} ${(txt.length / 1e6).toFixed(1)}M chars: tokenize ${t1 - t0} ms, tree ${((h1 - h0) / 1e6).toFixed(0)} MB (${nodes} lists, ${toks} tokens, ${uniq.size} distinct); pcbFromTree ${t3 - t2} ms; board object ${((h2 - h0) / 1e6).toFixed(0)} MB`);

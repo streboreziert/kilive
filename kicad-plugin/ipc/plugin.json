@@ -1,0 +1,22 @@
+{
+  "$schema": "https://go.kicad.org/api/schemas/v1",
+  "identifier": "com.noeticompute.send-to-kilive",
+  "name": "Send to KiLive",
+  "description": "Copy this project for KiLive: 3D, design checks and live simulation",
+  "runtime": {
+    "type": "python",
+    "min_version": "3.9"
+  },
+  "actions": [
+    {
+      "identifier": "com.noeticompute.send-to-kilive.send",
+      "name": "Send to KiLive",
+      "description": "Copy this project (board and schematics) for KiLive",
+      "show-button": true,
+      "scopes": ["pcb"],
+      "entrypoint": "main.py",
+      "icons-light": ["icon-24.png", "icon-48.png"],
+      "icons-dark": ["icon-24-dark.png", "icon-48-dark.png"]
+    }
+  ]
+}

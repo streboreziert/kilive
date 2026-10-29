@@ -1,0 +1,638 @@
+{
+ "part": {
+  "mpn": "LM358",
+  "manufacturer": "Texas Instruments",
+  "package": "SOIC-8"
+ },
+ "design": {
+  "title": "LM358 microphone preamp with LED level indicator",
+  "page": 12,
+  "description": "Non-inverting gain stage, buffer, NPN LED driver, crystal and trimmer included to exercise every symbol type."
+ },
+ "components": [
+  {
+   "ref": "U1",
+   "type": "ic",
+   "value": "LM358",
+   "mpn": "LM358DR",
+   "manufacturer": "",
+   "description": "",
+   "package": "SOIC-8",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": [
+    {
+     "number": "1",
+     "name": "OUT1",
+     "etype": "output",
+     "side": ""
+    },
+    {
+     "number": "2",
+     "name": "IN1-",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "3",
+     "name": "IN1+",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "4",
+     "name": "GND",
+     "etype": "power_in",
+     "side": ""
+    },
+    {
+     "number": "5",
+     "name": "IN2+",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "6",
+     "name": "IN2-",
+     "etype": "input",
+     "side": ""
+    },
+    {
+     "number": "7",
+     "name": "OUT2",
+     "etype": "output",
+     "side": ""
+    },
+    {
+     "number": "8",
+     "name": "VCC",
+     "etype": "power_in",
+     "side": ""
+    }
+   ]
+  },
+  {
+   "ref": "R1",
+   "type": "resistor",
+   "value": "10k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R2",
+   "type": "resistor",
+   "value": "100k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R3",
+   "type": "resistor",
+   "value": "1k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R4",
+   "type": "resistor",
+   "value": "4.7k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "R5",
+   "type": "resistor",
+   "value": "330R",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C1",
+   "type": "capacitor",
+   "value": "100nF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C2",
+   "type": "capacitor_polarized",
+   "value": "10uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "16V",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C3",
+   "type": "capacitor",
+   "value": "1uF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "Q1",
+   "type": "bjt_npn",
+   "value": "MMBT3904",
+   "mpn": "MMBT3904",
+   "manufacturer": "",
+   "description": "",
+   "package": "SOT-23",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "D1",
+   "type": "led",
+   "value": "RED",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "0603",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "D2",
+   "type": "diode",
+   "value": "1N4148W",
+   "mpn": "1N4148W",
+   "manufacturer": "",
+   "description": "",
+   "package": "SOD-123",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "RV1",
+   "type": "potentiometer",
+   "value": "10k",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "Y1",
+   "type": "crystal",
+   "value": "32.768kHz",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C4",
+   "type": "capacitor",
+   "value": "12pF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "C5",
+   "type": "capacitor",
+   "value": "12pF",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  },
+  {
+   "ref": "J1",
+   "type": "connector",
+   "value": "IN",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": [
+    {
+     "number": "1",
+     "name": ""
+    },
+    {
+     "number": "2",
+     "name": ""
+    },
+    {
+     "number": "3",
+     "name": ""
+    }
+   ]
+  },
+  {
+   "ref": "TP1",
+   "type": "test_point",
+   "value": "OUT",
+   "mpn": "",
+   "manufacturer": "",
+   "description": "",
+   "package": "",
+   "rating": "",
+   "tolerance": "",
+   "kicad_symbol": "",
+   "footprint": "",
+   "dnp": false,
+   "optional": false,
+   "pins": []
+  }
+ ],
+ "nets": [
+  {
+   "name": "+5V",
+   "kind": "power",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "8"
+    },
+    {
+     "ref": "C1",
+     "pin": "1"
+    },
+    {
+     "ref": "C2",
+     "pin": "+"
+    },
+    {
+     "ref": "J1",
+     "pin": "1"
+    },
+    {
+     "ref": "D1",
+     "pin": "A"
+    },
+    {
+     "ref": "RV1",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "kind": "ground",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "4"
+    },
+    {
+     "ref": "C1",
+     "pin": "2"
+    },
+    {
+     "ref": "C2",
+     "pin": "-"
+    },
+    {
+     "ref": "J1",
+     "pin": "3"
+    },
+    {
+     "ref": "R1",
+     "pin": "2"
+    },
+    {
+     "ref": "Q1",
+     "pin": "E"
+    },
+    {
+     "ref": "RV1",
+     "pin": "3"
+    },
+    {
+     "ref": "C4",
+     "pin": "2"
+    },
+    {
+     "ref": "C5",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "IN",
+   "kind": "signal",
+   "port": "input",
+   "nodes": [
+    {
+     "ref": "J1",
+     "pin": "2"
+    },
+    {
+     "ref": "C3",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "INP",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "C3",
+     "pin": "2"
+    },
+    {
+     "ref": "U1",
+     "pin": "3"
+    },
+    {
+     "ref": "RV1",
+     "pin": "W"
+    }
+   ]
+  },
+  {
+   "name": "FB",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "2"
+    },
+    {
+     "ref": "R1",
+     "pin": "1"
+    },
+    {
+     "ref": "R2",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "OUT1",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "1"
+    },
+    {
+     "ref": "R2",
+     "pin": "2"
+    },
+    {
+     "ref": "U1",
+     "pin": "5"
+    },
+    {
+     "ref": "D2",
+     "pin": "A"
+    }
+   ]
+  },
+  {
+   "name": "OUT2",
+   "kind": "signal",
+   "port": "output",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "7"
+    },
+    {
+     "ref": "U1",
+     "pin": "6"
+    },
+    {
+     "ref": "R3",
+     "pin": "1"
+    },
+    {
+     "ref": "TP1",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "R3",
+     "pin": "2"
+    },
+    {
+     "ref": "Q1",
+     "pin": "B"
+    },
+    {
+     "ref": "R4",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "PEAK",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "D2",
+     "pin": "K"
+    },
+    {
+     "ref": "R4",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "Q1",
+     "pin": "C"
+    },
+    {
+     "ref": "R5",
+     "pin": "2"
+    }
+   ]
+  },
+  {
+   "name": "",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "R5",
+     "pin": "1"
+    },
+    {
+     "ref": "D1",
+     "pin": "K"
+    }
+   ]
+  },
+  {
+   "name": "XI",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "Y1",
+     "pin": "1"
+    },
+    {
+     "ref": "C4",
+     "pin": "1"
+    }
+   ]
+  },
+  {
+   "name": "XO",
+   "kind": "signal",
+   "port": "none",
+   "nodes": [
+    {
+     "ref": "Y1",
+     "pin": "2"
+    },
+    {
+     "ref": "C5",
+     "pin": "1"
+    }
+   ]
+  }
+ ],
+ "no_connects": [],
+ "notes": [
+  "Gain = 1 + R2/R1 = 11"
+ ],
+ "warnings": []
+}

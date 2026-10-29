@@ -1,0 +1,112 @@
+# Build the static site, test it in headless Chromium, and publish it to GitHub Pages from main.
+# One-time setup: repository Settings -> Pages -> Source: "GitHub Actions".
+name: site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Syntax check every script
+        run: |
+          for f in app/js/*.js scripts/*.js; do node --check "$f" || exit 1; done
+          python -m py_compile tools/*.py scripts/*.py kicad-plugin/build.py kicad-plugin/swig/*.py kicad-plugin/ipc/main.py
+
+      - name: Plugin sources embedded in the app are up to date
+        run: |
+          python kicad-plugin/build.py
+          git diff --exit-code app/js/kicadplugin-src.js
+
+      - name: Build the static site
+        run: python scripts/build_site.py
+
+      - name: Smoke test in headless Chromium
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+          (cd dist && python -m http.server 8766 > /dev/null 2>&1 &)
+          sleep 1
+          python qa/static_smoke.py http://localhost:8766/ rp2040-guide,glasgow shots
+
+      - name: Open-from-GitHub test (GitHub stubbed with a local clone)
+        run: |
+          git clone --depth 1 https://github.com/Jana-Marie/OtterPill /tmp/otter
+          python qa/github_open.py http://localhost:8766/ /tmp/otter
+
+      - name: KiCad plugin package, end to end (pcbnew stubbed)
+        run: |
+          python kicad-plugin/build_pcm.py --dir /tmp/pcm --out pcm
+          cp -r "/tmp/otter/HW v1.4" /tmp/proj
+          python -u qa/kicad_plugin_e2e.py /tmp/pcm /tmp/proj
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kicad-plugin
+          path: pcm/*.zip
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots
+          path: shots/
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: dist/
+
+  real-kicad:
+    # the plugin against real KiCad 10 from the official PPA (pcbnew module, real unsaved edit)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install KiCad 10
+        run: |
+          sudo add-apt-repository -y ppa:kicad/kicad-10.0-releases
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends kicad
+          /usr/bin/python3 -c "import pcbnew; print(pcbnew.GetBuildVersion())"
+      - name: Playwright for the system Python
+        run: |
+          sudo /usr/bin/python3 -m pip install --break-system-packages playwright
+          sudo /usr/bin/python3 -m playwright install-deps chromium
+          /usr/bin/python3 -m playwright install chromium
+      - name: Plugin in real KiCad
+        run: |
+          python3 kicad-plugin/build_pcm.py --dir /tmp/pcm --out pcm
+          git clone --depth 1 https://github.com/Jana-Marie/OtterPill /tmp/otter
+          /usr/bin/python3 -u qa/kicad_real_api.py /tmp/pcm "/tmp/otter/HW v1.4/OtterPill.kicad_pcb"
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
