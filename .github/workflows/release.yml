@@ -21,4 +21,4 @@ jobs:
       - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" pcm/*.zip --title "${GITHUB_REF_NAME}" --notes "KiCad: Plugin and Content Manager -> Install from File... -> kilive-kicad-*.zip"
+        run: gh release create "${GITHUB_REF_NAME}" pcm/*.zip --title "${GITHUB_REF_NAME}" --notes "KiCad - Plugin and Content Manager -> Install from File... -> kilive-kicad-*.zip"
